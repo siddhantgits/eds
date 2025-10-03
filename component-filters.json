@@ -19,9 +19,9 @@
     ]
   },
   {
-    "id": "cards",
+    "id": "kards",
     "components": [
-      "card"
+      "kard"
     ]
   },
   {
