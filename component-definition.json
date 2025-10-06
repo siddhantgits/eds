@@ -143,7 +143,7 @@
           }
         },
         {
-          "title": "hiro",
+          "title": "zero",
           "id": "hero",
           "plugins": {
             "xwalk": {
@@ -160,8 +160,6 @@
         {
           "title": "Hero Homepage",
           "id": "herohomepage",
-          "icon": "image-icon",
-          "category": "media",
           "plugins": {
             "xwalk": {
               "page": {
