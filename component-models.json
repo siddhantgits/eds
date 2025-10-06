@@ -264,7 +264,7 @@
         "component": "aem-content",
         "description": "First call-to-action link",
         "label": "CTA 1 Link",
-        "name": "cta_1_link",
+        "name": "cta1_link",
         "required": false,
         "valueType": "string"
       },
@@ -272,7 +272,7 @@
         "component": "text",
         "description": "First call-to-action text",
         "label": "CTA 1 Text",
-        "name": "cta_1_text",
+        "name": "cta1text",
         "required": false,
         "valueType": "string"
       },
@@ -280,7 +280,7 @@
         "component": "aem-content",
         "description": "Second call-to-action link",
         "label": "CTA 2 Link",
-        "name": "cta_2_link",
+        "name": "cta2_link",
         "required": false,
         "valueType": "string"
       },
@@ -288,7 +288,7 @@
         "component": "text",
         "description": "Second call-to-action text",
         "label": "CTA 2 Text",
-        "name": "cta_2_text",
+        "name": "cta2_text",
         "required": false,
         "valueType": "string"
       }

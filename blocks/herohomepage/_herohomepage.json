@@ -12,10 +12,10 @@
             "template": {
               "backgroundImage": "/static/image/scarp/new/hero-blue.webp",
               "backgroundVideo": "https://qiddiya.com/assets/250121_City_Facts_16x9_EN_v25_aac66205e8/250121_City_Facts_16x9_EN_v25_aac66205e8.mp4",
-              "cta_1_link": "/about/sustainability/",
-              "cta_1_text": "Learn more",
-              "cta_2_link": "/",
-              "cta_2_text": "",
+              "cta1_link": "/about/sustainability/",
+              "cta1_text": "Learn more",
+              "cta2_link": "/",
+              "cta2_text": "",
               "description": "Here, we present our second ESG report for Qiddiya City, further strengthening our commitment to raising the quality of life for all.",
               "model": "herohomepage",
               "name": "Hero Homepage",
@@ -77,7 +77,7 @@
           "component": "aem-content",
           "description": "First call-to-action link",
           "label": "CTA 1 Link",
-          "name": "cta_1_link",
+          "name": "cta1_link",
           "required": false,
           "valueType": "string"
         },
@@ -85,7 +85,7 @@
           "component": "text",
           "description": "First call-to-action text",
           "label": "CTA 1 Text",
-          "name": "cta_1_text",
+          "name": "cta1text",
           "required": false,
           "valueType": "string"
         },
@@ -93,7 +93,7 @@
           "component": "aem-content",
           "description": "Second call-to-action link",
           "label": "CTA 2 Link",
-          "name": "cta_2_link",
+          "name": "cta2_link",
           "required": false,
           "valueType": "string"
         },
@@ -101,7 +101,7 @@
           "component": "text",
           "description": "Second call-to-action text",
           "label": "CTA 2 Text",
-          "name": "cta_2_text",
+          "name": "cta2_text",
           "required": false,
           "valueType": "string"
         }
