@@ -217,7 +217,7 @@
   },
   {
     "id": "honda",
-    "description": "Block model for Hero Homepage rendering",
+    "description": "Block model for Honda rendering",
     "fields": [
       {
         "component": "aem-content",
