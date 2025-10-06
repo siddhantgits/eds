@@ -108,12 +108,5 @@
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "honda",
-      "components": [
-        "honda"
-      ]
-    }
-  ]
+  "filters": []
 }

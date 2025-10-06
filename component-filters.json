@@ -15,13 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
-    ]
-  },
-  {
-    "id": "kards",
-    "components": [
-      "kard"
+      "fragment",
+      "honda"
     ]
   },
   {
@@ -40,9 +35,9 @@
     ]
   },
   {
-    "id": "honda",
+    "id": "kards",
     "components": [
-      "honda"
+      "kard"
     ]
   }
 ]
