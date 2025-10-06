@@ -220,11 +220,11 @@
     "description": "Block model for Hero Homepage rendering",
     "fields": [
       {
-        "component": "aem-content",
-        "description": "Image URL for hero background",
-        "label": "Background Image",
-        "name": "backgroundImage",
-        "required": false,
+        "component": "richtext",
+        "description": "Main title text for hero section",
+        "label": "Title",
+        "name": "title",
+        "required": true,
         "valueType": "string"
       }
     ]
