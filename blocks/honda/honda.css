@@ -1,4 +1,4 @@
-.herohomepage-section {
+.honda-section {
   --media-ratio-width: 16;
   --media-ratio-height: 9;
   --background-inline-size: 100%;
@@ -23,11 +23,11 @@
   z-index: 1;
 }
 
-.herohomepage-section.herohomepage-modal-open {
+.honda-section.honda-modal-open {
   z-index: 5;
 }
 
-.herohomepage-background-media {
+.honda-background-media {
   position: absolute;
   top: 0;
   right: 0;
@@ -36,7 +36,7 @@
   object-fit: cover;
 }
 
-.herohomepage-background-media.herohomepage-modal-open:after {
+.honda-background-media.honda-modal-open:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -46,7 +46,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.herohomepage-background-media>div {
+.honda-background-media>div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -56,11 +56,11 @@
   height: 100%;
 }
 
-.herohomepage-background-media button {
+.honda-background-media button {
   display: none;
 }
 
-.herohomepage-wrapper {
+.honda-wrapper {
   inline-size: min(100%, 87rem);
   /* Equivalent to 1392px assuming 16px base */
   margin-inline: auto;
@@ -84,19 +84,19 @@
   /* Equivalent to 24px assuming 16px base */
 }
 
-.herohomepage-wrapper .herohomepage-description,
-.herohomepage-wrapper .herohomepage-title {
+.honda-wrapper .honda-description,
+.honda-wrapper .honda-title {
   text-align: left;
   max-width: 26.875rem;
   /* Equivalent to 430px assuming 16px base */
 }
 
-[dir="rtl"] .herohomepage-wrapper .herohomepage-description,
-[dir="rtl"] .herohomepage-wrapper .herohomepage-title {
+[dir="rtl"] .honda-wrapper .honda-description,
+[dir="rtl"] .honda-wrapper .honda-title {
   text-align: right;
 }
 
-.herohomepage-wrapper .herohomepage-title {
+.honda-wrapper .honda-title {
   text-transform: uppercase;
   font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
   /* Explicitly defined */
@@ -110,19 +110,19 @@
   font-variant: all-small-caps;
 }
 
-.herohomepage-wrapper .herohomepage-title span {
+.honda-wrapper .honda-title span {
   font-weight: 400;
 }
 
-.herohomepage-wrapper .herohomepage-title span b {
+.honda-wrapper .honda-title span b {
   font-weight: 600;
 }
 
-.herohomepage-wrapper .herohomepage-title strong {
+.honda-wrapper .honda-title strong {
   font-weight: 800;
 }
 
-.herohomepage-wrapper .herohomepage-description {
+.honda-wrapper .honda-description {
   font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
   /* Explicitly defined */
   font-size: 1rem;
@@ -138,15 +138,15 @@
   width: 90%;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions {
+.honda-wrapper .honda-call-to-actions {
   justify-content: left;
 }
 
-[dir="rtl"] .herohomepage-wrapper .herohomepage-call-to-actions {
+[dir="rtl"] .honda-wrapper .honda-call-to-actions {
   align-items: flex-start;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions {
+.honda-wrapper .honda-call-to-actions {
   display: inline-flex;
   flex-direction: column;
   align-content: flex-start;
@@ -156,7 +156,7 @@
   /* Equivalent to 9px assuming 16px base */
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a {
+.honda-wrapper .honda-call-to-actions a {
   font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
   /* Explicitly defined */
   font-size: 0.875rem;
@@ -167,7 +167,7 @@
   justify-content: left;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:last-child {
+.honda-wrapper .honda-call-to-actions a:last-child {
   background: transparent;
   border: none;
   color: #fff;
@@ -176,7 +176,7 @@
   padding: 0;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:last-child span[data-name=chevron-right] {
+.honda-wrapper .honda-call-to-actions a:last-child span[data-name=chevron-right] {
   background-color: #e6ece9;
   border-radius: 6.25rem;
   /* Equivalent to 100px assuming 16px base */
@@ -187,19 +187,19 @@
   /* Equivalent to 32px assuming 16px base */
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:last-child span[data-name=chevron-right] svg {
+.honda-wrapper .honda-call-to-actions a:last-child span[data-name=chevron-right] svg {
   width: 1rem;
   /* Equivalent to 16px assuming 16px base */
   height: 1rem;
   /* Equivalent to 16px assuming 16px base */
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:last-child span:last-child,
-.herohomepage-wrapper .herohomepage-call-to-actions a:last-child span:last-child:hover {
+.honda-wrapper .honda-call-to-actions a:last-child span:last-child,
+.honda-wrapper .honda-call-to-actions a:last-child span:last-child:hover {
   color: #fff;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:first-child {
+.honda-wrapper .honda-call-to-actions a:first-child {
   background: #e6ece9;
   color: #2a2a2a;
   border: 2px solid #fff;
@@ -211,37 +211,37 @@
   /* Equivalent to 24px assuming 16px base */
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:first-child:hover {
+.honda-wrapper .honda-call-to-actions a:first-child:hover {
   background-color: transparent;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:first-child:hover span:last-child {
+.honda-wrapper .honda-call-to-actions a:first-child:hover span:last-child {
   color: #fff;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:first-child span:last-child {
+.honda-wrapper .honda-call-to-actions a:first-child span:last-child {
   color: #2a2a2a;
 }
 
-.herohomepage-wrapper .herohomepage-call-to-actions a:first-child span:last-child:hover {
+.honda-wrapper .honda-call-to-actions a:first-child span:last-child:hover {
   color: #fff;
 }
 
-[dir="rtl"] .herohomepage-wrapper .herohomepage-call-to-actions {
+[dir="rtl"] .honda-wrapper .honda-call-to-actions {
   align-content: flex-end;
 }
 
-[dir="rtl"] .herohomepage-wrapper .herohomepage-call-to-actions a {
+[dir="rtl"] .honda-wrapper .honda-call-to-actions a {
   justify-content: right;
 }
 
-.herohomepage-control-button-container {
+.honda-control-button-container {
   position: absolute;
   inset-inline-end: 0;
   inset-block-end: 0;
 }
 
-.herohomepage-background {
+.honda-background {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -251,11 +251,11 @@
   background: linear-gradient(283deg, transparent 1.17%, rgba(0, 0, 0, 0.7) 60.26%);
 }
 
-[dir="rtl"] .herohomepage-background {
+[dir="rtl"] .honda-background {
   background: linear-gradient(68deg, transparent, rgba(0, 0, 0, 0.7) 60.26%);
 }
 
-.herohomepage-scarp {
+.honda-scarp {
   --a3-background: transparent;
   position: absolute;
   inset-inline-start: 0;
@@ -270,14 +270,14 @@
   /* Equivalent to 104px assuming 16px base */
 }
 
-[dir="rtl"] .herohomepage-scarp {
+[dir="rtl"] .honda-scarp {
   left: 0;
   right: auto;
   transform: scaleX(-1) translateY(60%);
 }
 
 @media (max-width: 479px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     inline-size: 12.875rem;
     /* Equivalent to 206px assuming 16px base */
     aspect-ratio: 206/211;
@@ -286,13 +286,13 @@
     transform: translate(20%, 60%);
   }
 
-  [dir="rtl"] .herohomepage-scarp {
+  [dir="rtl"] .honda-scarp {
     transform: scaleX(-1) translate(20%, 60%);
   }
 }
 
 @media (min-width: 481px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     aspect-ratio: 212/218;
     inline-size: 13.25rem;
     /* Equivalent to 212px assuming 16px base */
@@ -302,7 +302,7 @@
 }
 
 @media (min-width: 768px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     aspect-ratio: 212/218;
     inline-size: 13.25rem;
     /* Equivalent to 212px assuming 16px base */
@@ -312,7 +312,7 @@
 }
 
 @media (min-width: 1024px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     inline-size: 17.75rem;
     /* Equivalent to 284px assuming 16px base */
     aspect-ratio: 284/291;
@@ -322,7 +322,7 @@
 }
 
 @media (min-width: 1440px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     inline-size: 25rem;
     /* Equivalent to 400px assuming 16px base */
     aspect-ratio: 40/41;
@@ -332,7 +332,7 @@
 }
 
 @media (min-width: 1920px) {
-  .herohomepage-scarp {
+  .honda-scarp {
     inline-size: 33.3125rem;
     /* Equivalent to 533px assuming 16px base */
     aspect-ratio: 533/546;
@@ -342,7 +342,7 @@
 }
 
 @media (min-width: 768px) {
-  .herohomepage-section {
+  .honda-section {
     --background-ratio-width: 3576;
     --background-ratio-height: 1684;
     --background-inline-size: 120rem;
@@ -354,20 +354,20 @@
     /* Equivalent to 160px assuming 16px base */
   }
 
-  .herohomepage-wrapper {
+  .honda-wrapper {
     padding-left: 3rem;
     /* Equivalent to 48px assuming 16px base */
     padding-right: 3rem;
     /* Equivalent to 48px assuming 16px base */
   }
 
-  .herohomepage-wrapper .herohomepage-description,
-  .herohomepage-wrapper .herohomepage-title {
+  .honda-wrapper .honda-description,
+  .honda-wrapper .honda-title {
     max-width: 50rem;
     /* Equivalent to 800px assuming 16px base */
   }
 
-  .herohomepage-wrapper .herohomepage-title {
+  .honda-wrapper .honda-title {
     text-transform: uppercase;
     font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
     /* Explicitly defined */
@@ -381,7 +381,7 @@
     width: 90%;
   }
 
-  .herohomepage-wrapper .herohomepage-description {
+  .honda-wrapper .honda-description {
     color: #f5f5f5;
     font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
     /* Explicitly defined */
@@ -398,19 +398,19 @@
     width: 50%;
   }
 
-  .herohomepage-wrapper .herohomepage-call-to-actions {
+  .honda-wrapper .honda-call-to-actions {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
 
-  [dir="rtl"] .herohomepage-wrapper .herohomepage-call-to-actions {
+  [dir="rtl"] .honda-wrapper .honda-call-to-actions {
     justify-content: flex-start;
   }
 }
 
 @media (min-width: 1440px) {
-  .herohomepage-wrapper {
+  .honda-wrapper {
     box-sizing: content-box;
     gap: 1.5rem;
     /* Equivalent to 24px assuming 16px base */
@@ -419,13 +419,13 @@
     height: auto;
   }
 
-  .herohomepage-wrapper .herohomepage-description,
-  .herohomepage-wrapper .herohomepage-title {
+  .honda-wrapper .honda-description,
+  .honda-wrapper .honda-title {
     max-width: 50rem;
     /* Equivalent to 800px assuming 16px base */
   }
 
-  .herohomepage-wrapper .herohomepage-title {
+  .honda-wrapper .honda-title {
     text-transform: uppercase;
     font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
     /* Explicitly defined */
@@ -439,49 +439,49 @@
     font-variant: all-small-caps;
   }
 
-  .herohomepage-wrapper .herohomepage-description {
+  .honda-wrapper .honda-description {
     width: 34.375rem;
     /* Equivalent to 550px assuming 16px base */
   }
 }
 
 @media (max-width: 479px) {
-  .herohomepage-section {
+  .honda-section {
     min-height: 40rem;
     /* Equivalent to 640px assuming 16px base */
   }
 
-  .herohomepage-section.herohomepage-scarp-wrapper {
+  .honda-section.honda-scarp-wrapper {
     margin-bottom: -1.375rem;
     /* Equivalent to -22px assuming 16px base */
   }
 }
 
 @media (min-width: 1440px) {
-  .herohomepage-section.herohomepage-scarp-wrapper {
+  .honda-section.honda-scarp-wrapper {
     margin-bottom: 10rem;
     /* Equivalent to 160px assuming 16px base */
   }
 }
 
-.herohomepage-image {
+.honda-image {
   inline-size: 100%;
 }
 
-.herohomepage-is-loaded {
+.honda-is-loaded {
   transition: opacity 0.6s linear;
   opacity: 1;
 }
 
-.herohomepage-native-video {
+.honda-native-video {
   inline-size: 100%;
 }
 
-.herohomepage-object-fit-cover {
+.honda-object-fit-cover {
   object-fit: cover;
 }
 
-.herohomepage-video-player {
+.honda-video-player {
   --o6-aspect-ratio: 16/9;
   --o6-background: #191715;
   --o6-controls-actions-gap: 0.5rem;
@@ -522,31 +522,31 @@
   position: relative;
 }
 
-.herohomepage-play-button {
+.honda-play-button {
   inset-block-start: 50%;
   inset-inline-start: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 
-.herohomepage-poster,
-.herohomepage-video {
+.honda-poster,
+.honda-video {
   inset-block-start: 0;
   inset-inline-start: 0;
   position: absolute;
 }
 
-.herohomepage-video-player-controls {
+.honda-video-player-controls {
   position: absolute;
   inset-block-end: 0;
   inset-inline-start: 0;
 }
 
-.herohomepage-is-hidden {
+.honda-is-hidden {
   opacity: 0;
 }
 
-.herohomepage-captions {
+.honda-captions {
   position: absolute;
   inset-block-end: var(--o6-subtitles-inset-block-end);
   inset-inline-start: 50%;
@@ -559,11 +559,11 @@
   white-space: pre;
 }
 
-.herohomepage-is-showing-controls {
+.honda-is-showing-controls {
   transform: translate(-50%, -100px);
 }
 
-.herohomepage-play-call-to-action {
+.honda-play-call-to-action {
   position: absolute;
   inset-inline-start: 50%;
   inset-block-start: 50%;
@@ -576,11 +576,11 @@
   --clickable-element-hover-border-color: #fff !important;
 }
 
-[dir="rtl"] .herohomepage-play-call-to-action {
+[dir="rtl"] .honda-play-call-to-action {
   transform: translate(calc(var(--clickable-element-block-size) * 0.5), -50%);
 }
 
-.herohomepage-clickable-element {
+.honda-clickable-element {
   --clickable-element-hover-animation-name: clickable-element-icon-hover;
   cursor: pointer;
   text-decoration: none;
@@ -594,38 +594,38 @@
   outline: 0 solid var(--clickable-element-hover-border-color, var(--clickable-element-background-color));
 }
 
-.herohomepage-clickable-element .herohomepage-clickable-icon {
+.honda-clickable-element .honda-clickable-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
 
-[dir="rtl"] .herohomepage-clickable-element .herohomepage-clickable-icon {
+[dir="rtl"] .honda-clickable-element .honda-clickable-icon {
   --clickable-element-hover-animation-name: clickable-element-icon-hover-inversed;
 }
 
-[dir="rtl"] .herohomepage-clickable-element .herohomepage-clickable-icon:has([data-name=chevron-left]) {
+[dir="rtl"] .honda-clickable-element .honda-clickable-icon:has([data-name=chevron-left]) {
   --clickable-element-hover-animation-name: clickable-element-icon-hover;
 }
 
-.herohomepage-clickable-element[aria-disabled],
-.herohomepage-clickable-element[disabled] {
+.honda-clickable-element[aria-disabled],
+.honda-clickable-element[disabled] {
   opacity: 0.6;
   filter: grayscale(60%);
   cursor: not-allowed;
 }
 
-.herohomepage-clickable-element:focus-visible {
+.honda-clickable-element:focus-visible {
   outline-width: 2px;
   outline-offset: 2px;
 }
 
-.herohomepage-clickable-element .herohomepage-clickable-label {
+.honda-clickable-element .honda-clickable-label {
   position: relative;
 }
 
-.herohomepage-clickable-element:not([disabled], [aria-disabled])[data-theme]:focus-visible {
+.honda-clickable-element:not([disabled], [aria-disabled])[data-theme]:focus-visible {
   --clickable-element-background-color: var(--clickable-element-hover-background-color);
   --clickable-element-text-color: var(--clickable-element-hover-text-color);
   --clickable-element-icon-color: var(--clickable-element-hover-icon-color);
@@ -633,7 +633,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .herohomepage-clickable-element:not([disabled], [aria-disabled])[data-theme]:hover {
+  .honda-clickable-element:not([disabled], [aria-disabled])[data-theme]:hover {
     --clickable-element-background-color: var(--clickable-element-hover-background-color);
     --clickable-element-border-color: var(--clickable-element-hover-border-color);
     --clickable-element-text-color: var(--clickable-element-hover-text-color);
@@ -641,7 +641,7 @@
   }
 }
 
-.herohomepage-clickable-element[data-theme=primary] {
+.honda-clickable-element[data-theme=primary] {
   block-size: var(--clickable-element-block-size);
   padding-inline: var(--clickable-element-padding-inline);
   border-radius: var(--clickable-element-border-radius, 6.25rem);
@@ -658,77 +658,77 @@
   --clickable-element-hover-text-color: #04331a;
 }
 
-.herohomepage-clickable-element[data-theme=primary] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=primary] .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=primary] .honda-clickable-icon,
+.honda-clickable-element[data-theme=primary] .honda-clickable-label {
   color: var(--clickable-element-text-color, var(--clickable-element-base-text-color));
   transition: color 0.2s ease-in-out;
 }
 
-.herohomepage-clickable-element[data-theme=primary]:not(.herohomepage-has-icon) .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=primary]:not(.honda-has-icon) .honda-clickable-icon {
   transition: transform 0.2s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .herohomepage-clickable-element[data-theme=primary]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon {
+  .honda-clickable-element[data-theme=primary]:not(.honda-has-icon):hover .honda-clickable-icon {
     transform: translateX(0.2em);
   }
 
-  .herohomepage-clickable-element[data-theme=primary]:not(.herohomepage-has-icon):hover:has([data-name=chevron-left]) {
+  .honda-clickable-element[data-theme=primary]:not(.honda-has-icon):hover:has([data-name=chevron-left]) {
     transform: translateX(-0.4em);
   }
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-size=small] {
+.honda-clickable-element[data-theme=primary][data-size=small] {
   block-size: clamp(28px, 1.75rem + 0.5vw, 36px);
   /* Equivalent to 28px, calc(28px + 8 * (100vw - 375px) / 817), 36px assuming 16px base */
   padding-inline: clamp(11px, 0.6875rem + 0.3125vw, 16px);
   /* Equivalent to 11px, calc(11px + 5 * (100vw - 375px) / 817), 16px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-size=small] .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=primary][data-size=small] .honda-clickable-icon {
   block-size: 1rem;
   /* Equivalent to 16px assuming 16px base */
   inline-size: 1rem;
   /* Equivalent to 16px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-size=small] .herohomepage-clickable-icon svg {
+.honda-clickable-element[data-theme=primary][data-size=small] .honda-clickable-icon svg {
   block-size: 80%;
   inline-size: 80%;
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-size=default],
-.herohomepage-clickable-element[data-theme=primary][data-size=large] {
+.honda-clickable-element[data-theme=primary][data-size=default],
+.honda-clickable-element[data-theme=primary][data-size=large] {
   block-size: clamp(40px, 2.5rem + 0.5vw, 48px);
   /* Equivalent to 40px, calc(40px + 8 * (100vw - 375px) / 817), 48px assuming 16px base */
   padding-inline: clamp(15px, 0.9375rem + 0.3125vw, 20px);
   /* Equivalent to 15px, calc(15px + 5 * (100vw - 375px) / 817), 20px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-size=default] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=primary][data-size=large] .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=primary][data-size=default] .honda-clickable-icon,
+.honda-clickable-element[data-theme=primary][data-size=large] .honda-clickable-icon {
   block-size: 1.5rem;
   /* Equivalent to 24px assuming 16px base */
   inline-size: 1.5rem;
   /* Equivalent to 24px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=primary].herohomepage-has-icon {
+.honda-clickable-element[data-theme=primary].honda-has-icon {
   --clickable-element-padding-inline: 0;
   inline-size: var(--clickable-element-block-size);
 }
 
-.herohomepage-clickable-element[data-theme=primary]:active {
+.honda-clickable-element[data-theme=primary]:active {
   color: var(--clickable-element-hover-text-color);
   background-color: var(--clickable-element-hover-background-color);
 }
 
-.herohomepage-clickable-element[data-theme=primary][data-palette=palette-dark],
-.herohomepage-clickable-element[data-theme=primary][data-palette=palette-light] {
+.honda-clickable-element[data-theme=primary][data-palette=palette-dark],
+.honda-clickable-element[data-theme=primary][data-palette=palette-light] {
   --clickable-element-hover-background-color: transparent;
 }
 
-.herohomepage-clickable-element[data-theme=secondary] {
+.honda-clickable-element[data-theme=secondary] {
   block-size: var(--clickable-element-block-size);
   padding-inline: var(--clickable-element-padding-inline);
   border-radius: var(--clickable-element-border-radius, 6.25rem);
@@ -745,86 +745,86 @@
   --clickable-element-hover-border-color: rgba(0, 0, 0, 0.15);
 }
 
-.herohomepage-clickable-element[data-theme=secondary] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=secondary] .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=secondary] .honda-clickable-icon,
+.honda-clickable-element[data-theme=secondary] .honda-clickable-label {
   color: var(--clickable-element-text-color, var(--clickable-element-base-text-color));
   transition: color 0.2s ease-in-out;
 }
 
-.herohomepage-clickable-element[data-theme=secondary]:not(.herohomepage-has-icon) .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=secondary]:not(.honda-has-icon) .honda-clickable-icon {
   transition: transform 0.2s ease-in-out;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .herohomepage-clickable-element[data-theme=secondary]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon {
+  .honda-clickable-element[data-theme=secondary]:not(.honda-has-icon):hover .honda-clickable-icon {
     transform: translateX(0.2em);
   }
 
-  .herohomepage-clickable-element[data-theme=secondary]:not(.herohomepage-has-icon):hover:has([data-name=chevron-left]) {
+  .honda-clickable-element[data-theme=secondary]:not(.honda-has-icon):hover:has([data-name=chevron-left]) {
     transform: translateX(-0.4em);
   }
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-size=small] {
+.honda-clickable-element[data-theme=secondary][data-size=small] {
   block-size: clamp(28px, 1.75rem + 0.5vw, 36px);
   /* Equivalent to 28px, calc(28px + 8 * (100vw - 375px) / 817), 36px assuming 16px base */
   padding-inline: clamp(11px, 0.6875rem + 0.3125vw, 16px);
   /* Equivalent to 11px, calc(11px + 5 * (100vw - 375px) / 817), 16px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-size=small] .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=secondary][data-size=small] .honda-clickable-icon {
   block-size: 1rem;
   /* Equivalent to 16px assuming 16px base */
   inline-size: 1rem;
   /* Equivalent to 16px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-size=small] .herohomepage-clickable-icon svg {
+.honda-clickable-element[data-theme=secondary][data-size=small] .honda-clickable-icon svg {
   block-size: 80%;
   inline-size: 80%;
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-size=default],
-.herohomepage-clickable-element[data-theme=secondary][data-size=large] {
+.honda-clickable-element[data-theme=secondary][data-size=default],
+.honda-clickable-element[data-theme=secondary][data-size=large] {
   block-size: clamp(40px, 2.5rem + 0.5vw, 48px);
   /* Equivalent to 40px, calc(40px + 8 * (100vw - 375px) / 817), 48px assuming 16px base */
   padding-inline: clamp(15px, 0.9375rem + 0.3125vw, 20px);
   /* Equivalent to 15px, calc(15px + 5 * (100vw - 375px) / 817), 20px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-size=default] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=secondary][data-size=large] .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=secondary][data-size=default] .honda-clickable-icon,
+.honda-clickable-element[data-theme=secondary][data-size=large] .honda-clickable-icon {
   block-size: 1.5rem;
   /* Equivalent to 24px assuming 16px base */
   inline-size: 1.5rem;
   /* Equivalent to 24px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=secondary].herohomepage-has-icon {
+.honda-clickable-element[data-theme=secondary].honda-has-icon {
   --clickable-element-padding-inline: 0;
   inline-size: var(--clickable-element-block-size);
 }
 
-.herohomepage-clickable-element[data-theme=secondary]:active {
+.honda-clickable-element[data-theme=secondary]:active {
   color: var(--clickable-element-hover-text-color);
   background-color: var(--clickable-element-hover-background-color);
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-palette=palette-dark] {
+.honda-clickable-element[data-theme=secondary][data-palette=palette-dark] {
   --clickable-element-base-background-color: rgba(0, 0, 0, 0.1);
   --clickable-element-base-text-color: #d7e3bb;
   --clickable-element-hover-text-color: #d7e3bb;
   --clickable-element-hover-border-color: #d7e3bb;
 }
 
-.herohomepage-clickable-element[data-theme=secondary][data-palette=palette-light] {
+.honda-clickable-element[data-theme=secondary][data-palette=palette-light] {
   --clickable-element-base-background-color: rgba(255, 255, 255, 0.1);
   --clickable-element-base-text-color: #d7e3bb;
   --clickable-element-hover-text-color: #d7e3bb;
 }
 
-.herohomepage-clickable-element[data-theme=circle],
-.herohomepage-clickable-element[data-theme=square] {
+.honda-clickable-element[data-theme=circle],
+.honda-clickable-element[data-theme=square] {
   block-size: var(--clickable-element-size);
   inline-size: var(--clickable-element-size);
   --clickable-element-base-background-color: #054021;
@@ -841,37 +841,37 @@
   flex-shrink: 0;
 }
 
-.herohomepage-clickable-element[data-theme=circle] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=circle] .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=square] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=square] .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=circle] .honda-clickable-icon,
+.honda-clickable-element[data-theme=circle] .honda-clickable-label,
+.honda-clickable-element[data-theme=square] .honda-clickable-icon,
+.honda-clickable-element[data-theme=square] .honda-clickable-label {
   color: var(--clickable-element-text-color, var(--clickable-element-base-text-color));
   transition: color 0.2s ease-in-out;
 }
 
-.herohomepage-clickable-element[data-theme=circle] .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=square] .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=circle] .honda-clickable-label,
+.honda-clickable-element[data-theme=square] .honda-clickable-label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.herohomepage-clickable-element[data-theme=circle][data-size=small],
-.herohomepage-clickable-element[data-theme=square][data-size=small] {
+.honda-clickable-element[data-theme=circle][data-size=small],
+.honda-clickable-element[data-theme=square][data-size=small] {
   --clickable-element-size: clamp(40px, 2.5rem + 0.5vw, 48px);
   /* Equivalent to 40px, calc(40px + 8 * (100vw - 375px) / 817), 48px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=circle][data-size=default],
-.herohomepage-clickable-element[data-theme=circle][data-size=large],
-.herohomepage-clickable-element[data-theme=square][data-size=default],
-.herohomepage-clickable-element[data-theme=square][data-size=large] {
+.honda-clickable-element[data-theme=circle][data-size=default],
+.honda-clickable-element[data-theme=circle][data-size=large],
+.honda-clickable-element[data-theme=square][data-size=default],
+.honda-clickable-element[data-theme=square][data-size=large] {
   --clickable-element-size: clamp(48px, 3rem + 1vw, 64px);
   /* Equivalent to 48px, calc(48px + 16 * (100vw - 375px) / 817), 64px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=iconlink],
-.herohomepage-clickable-element[data-theme=link] {
+.honda-clickable-element[data-theme=iconlink],
+.honda-clickable-element[data-theme=link] {
   --clickable-element-base-background-color: rgba(255, 255, 255, 0.1);
   --clickable-element-base-border-color: transparent;
   --clickable-element-base-icon-color: #054021;
@@ -885,13 +885,13 @@
   block-size: var(--clickable-element-block-size);
 }
 
-.herohomepage-clickable-element[data-theme=iconlink] .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=link] .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=iconlink] .honda-clickable-label,
+.honda-clickable-element[data-theme=link] .honda-clickable-label {
   color: var(--clickable-element-text-color, var(--clickable-element-base-text-color));
 }
 
-.herohomepage-clickable-element[data-theme=iconlink]:not(.herohomepage-has-start-icon, .herohomepage-has-end-icon) .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=link]:not(.herohomepage-has-start-icon, .herohomepage-has-end-icon) .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=iconlink]:not(.honda-has-start-icon, .honda-has-end-icon) .honda-clickable-label,
+.honda-clickable-element[data-theme=link]:not(.honda-has-start-icon, .honda-has-end-icon) .honda-clickable-label {
   text-decoration: underline;
   transition: text-decoration-color 0.1s ease-in-out;
   text-underline-offset: 2px;
@@ -902,55 +902,55 @@
 
 @media (hover: hover) and (pointer: fine) {
 
-  .herohomepage-clickable-element[data-theme=iconlink]:not(.herohomepage-has-start-icon, .herohomepage-has-end-icon):hover .herohomepage-clickable-label,
-  .herohomepage-clickable-element[data-theme=link]:not(.herohomepage-has-start-icon, .herohomepage-has-end-icon):hover .herohomepage-clickable-label {
+  .honda-clickable-element[data-theme=iconlink]:not(.honda-has-start-icon, .honda-has-end-icon):hover .honda-clickable-label,
+  .honda-clickable-element[data-theme=link]:not(.honda-has-start-icon, .honda-has-end-icon):hover .honda-clickable-label {
     --clickable-element-text-decoration-color: currentcolor;
   }
 }
 
-.herohomepage-clickable-element[data-theme=iconlink].herohomepage-has-end-icon:not(.herohomepage-has-start-icon) .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=link].herohomepage-has-end-icon:not(.herohomepage-has-start-icon) .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=iconlink].honda-has-end-icon:not(.honda-has-start-icon) .honda-clickable-label,
+.honda-clickable-element[data-theme=link].honda-has-end-icon:not(.honda-has-start-icon) .honda-clickable-label {
   padding-inline-start: 0.5rem;
   /* Equivalent to 8px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=iconlink].herohomepage-has-start-icon:not(.herohomepage-has-end-icon) .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=link].herohomepage-has-start-icon:not(.herohomepage-has-end-icon) .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=iconlink].honda-has-start-icon:not(.honda-has-end-icon) .honda-clickable-label,
+.honda-clickable-element[data-theme=link].honda-has-start-icon:not(.honda-has-end-icon) .honda-clickable-label {
   padding-inline-end: 0.5rem;
   /* Equivalent to 8px assuming 16px base */
 }
 
 @media (hover: hover) and (pointer: fine) {
 
-  .herohomepage-clickable-element[data-theme=iconlink]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon,
-  .herohomepage-clickable-element[data-theme=link]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon {
+  .honda-clickable-element[data-theme=iconlink]:not(.honda-has-icon):hover .honda-clickable-icon,
+  .honda-clickable-element[data-theme=link]:not(.honda-has-icon):hover .honda-clickable-icon {
     transform: translateX(0.2em);
   }
 
-  [dir="rtl"] .herohomepage-clickable-element[data-theme=iconlink]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon,
-  [dir="rtl"] .herohomepage-clickable-element[data-theme=link]:not(.herohomepage-has-icon):hover .herohomepage-clickable-icon {
+  [dir="rtl"] .honda-clickable-element[data-theme=iconlink]:not(.honda-has-icon):hover .honda-clickable-icon,
+  [dir="rtl"] .honda-clickable-element[data-theme=link]:not(.honda-has-icon):hover .honda-clickable-icon {
     transform: translateX(-0.2em);
   }
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-palette=palette-dark],
-.herohomepage-clickable-element[data-theme=link][data-palette=palette-dark] {
+.honda-clickable-element[data-theme=iconlink][data-palette=palette-dark],
+.honda-clickable-element[data-theme=link][data-palette=palette-dark] {
   --clickable-element-base-background-color: rgba(0, 0, 0, 0.1);
   --clickable-element-base-text-color: #d7e3bb;
   --clickable-element-base-icon-color: #d7e3bb;
   --clickable-element-hover-text-color: #d7e3bb;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-palette=palette-light],
-.herohomepage-clickable-element[data-theme=link][data-palette=palette-light] {
+.honda-clickable-element[data-theme=iconlink][data-palette=palette-light],
+.honda-clickable-element[data-theme=link][data-palette=palette-light] {
   --clickable-element-base-background-color: rgba(255, 255, 255, 0.1);
   --clickable-element-base-text-color: #d7e3bb;
   --clickable-element-base-icon-color: #d7e3bb;
   --clickable-element-hover-text-color: #d7e3bb;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink] .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=link] .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=iconlink] .honda-clickable-icon,
+.honda-clickable-element[data-theme=link] .honda-clickable-icon {
   block-size: var(--clickable-element-block-size);
   inline-size: var(--clickable-element-block-size);
   background: var(--clickable-element-background-color, var(--clickable-element-base-background-color));
@@ -960,73 +960,73 @@
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink] .herohomepage-clickable-icon svg,
-.herohomepage-clickable-element[data-theme=link] .herohomepage-clickable-icon svg {
+.honda-clickable-element[data-theme=iconlink] .honda-clickable-icon svg,
+.honda-clickable-element[data-theme=link] .honda-clickable-icon svg {
   block-size: 40%;
   inline-size: 40%;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=small],
-.herohomepage-clickable-element[data-theme=link][data-size=small] {
+.honda-clickable-element[data-theme=iconlink][data-size=small],
+.honda-clickable-element[data-theme=link][data-size=small] {
   block-size: clamp(16px, 1rem + 0.5vw, 24px);
   /* Equivalent to 16px, calc(16px + 8 * (100vw - 375px) / 817), 24px assuming 16px base */
   padding-inline: clamp(4px, 0.25rem + 0.25vw, 8px);
   /* Equivalent to 4px, calc(4px + 4 * (100vw - 375px) / 817), 8px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=small] svg,
-.herohomepage-clickable-element[data-theme=link][data-size=small] svg {
+.honda-clickable-element[data-theme=iconlink][data-size=small] svg,
+.honda-clickable-element[data-theme=link][data-size=small] svg {
   block-size: 70%;
   inline-size: 70%;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=default],
-.herohomepage-clickable-element[data-theme=link][data-size=default] {
+.honda-clickable-element[data-theme=iconlink][data-size=default],
+.honda-clickable-element[data-theme=link][data-size=default] {
   block-size: clamp(28px, 1.75rem + 0.5vw, 36px);
   /* Equivalent to 28px, calc(28px + 8 * (100vw - 375px) / 817), 36px assuming 16px base */
   padding-inline: clamp(8px, 0.5rem + 0.5vw, 16px);
   /* Equivalent to 8px, calc(8px + 8 * (100vw - 375px) / 817), 16px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=default] svg,
-.herohomepage-clickable-element[data-theme=link][data-size=default] svg {
+.honda-clickable-element[data-theme=iconlink][data-size=default] svg,
+.honda-clickable-element[data-theme=link][data-size=default] svg {
   block-size: 50%;
   inline-size: 50%;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=large],
-.herohomepage-clickable-element[data-theme=link][data-size=large] {
+.honda-clickable-element[data-theme=iconlink][data-size=large],
+.honda-clickable-element[data-theme=link][data-size=large] {
   block-size: clamp(48px, 3rem + 1vw, 64px);
   /* Equivalent to 48px, calc(48px + 16 * (100vw - 375px) / 817), 64px assuming 16px base */
   padding-inline: clamp(12px, 0.75rem + 0.5vw, 20px);
   /* Equivalent to 12px, calc(12px + 8 * (100vw - 375px) / 817), 20px assuming 16px base */
 }
 
-.herohomepage-clickable-element[data-theme=iconlink][data-size=large] svg,
-.herohomepage-clickable-element[data-theme=link][data-size=large] svg {
+.honda-clickable-element[data-theme=iconlink][data-size=large] svg,
+.honda-clickable-element[data-theme=link][data-size=large] svg {
   block-size: 40%;
   inline-size: 40%;
 }
 
-.herohomepage-clickable-element[data-theme=iconlink]:active .herohomepage-clickable-icon,
-.herohomepage-clickable-element[data-theme=link]:active .herohomepage-clickable-icon {
+.honda-clickable-element[data-theme=iconlink]:active .honda-clickable-icon,
+.honda-clickable-element[data-theme=link]:active .honda-clickable-icon {
   background-color: var(--clickable-element-hover-background-color);
 }
 
-.herohomepage-clickable-element[data-theme=iconlink]:active .herohomepage-clickable-label,
-.herohomepage-clickable-element[data-theme=link]:active .herohomepage-clickable-label {
+.honda-clickable-element[data-theme=iconlink]:active .honda-clickable-label,
+.honda-clickable-element[data-theme=link]:active .honda-clickable-label {
   color: var(--clickable-element-hover-text-color);
 }
 
-.herohomepage-clickable-element[data-theme=iconlink]:focus-visible,
-.herohomepage-clickable-element[data-theme=link]:focus-visible {
+.honda-clickable-element[data-theme=iconlink]:focus-visible,
+.honda-clickable-element[data-theme=link]:focus-visible {
   border-radius: var(--clickable-element-border-radius, 6.25rem);
   /* Equivalent to 100px assuming 16px base */
   outline: 2px solid var(--clickable-element-hover-border-color, var(--clickable-element-background-color));
   outline-offset: 2px;
 }
 
-.herohomepage-typography {
+.honda-typography {
   font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
   /* Explicitly defined */
   font-weight: 400;
@@ -1039,24 +1039,24 @@
   margin: 0;
 }
 
-.herohomepage-typography[data-style=visually-hidden] {
+.honda-typography[data-style=visually-hidden] {
   block-size: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.herohomepage-typography[data-highlight],
-.herohomepage-typography [data-highlight] {
+.honda-typography[data-highlight],
+.honda-typography [data-highlight] {
   color: var(--text-highlight-color);
 }
 
-.herohomepage-typography[data-variant=body-cta],
-.herohomepage-typography[data-variant=body-eyebrow],
-.herohomepage-typography[data-variant=heading-6] {
+.honda-typography[data-variant=body-cta],
+.honda-typography[data-variant=body-eyebrow],
+.honda-typography[data-variant=heading-6] {
   text-transform: uppercase;
 }
 
-.herohomepage-typography[data-variant=heading-0] {
+.honda-typography[data-variant=heading-0] {
   --typography-font-family: var(--heading-0-font-family);
   --typography-font-weight: var(--heading-0-font-weight);
   --typography-font-size: var(--heading-0-font-size);
@@ -1064,7 +1064,7 @@
   --typography-letter-spacing: var(--heading-0-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-1] {
+.honda-typography[data-variant=heading-1] {
   --typography-font-family: var(--heading-1-font-family);
   --typography-font-weight: var(--heading-1-font-weight);
   --typography-font-size: var(--heading-1-font-size);
@@ -1072,7 +1072,7 @@
   --typography-letter-spacing: var(--heading-1-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-2] {
+.honda-typography[data-variant=heading-2] {
   --typography-font-family: var(--heading-2-font-family);
   --typography-font-weight: var(--heading-2-font-weight);
   --typography-font-size: var(--heading-2-font-size);
@@ -1080,7 +1080,7 @@
   --typography-letter-spacing: var(--heading-2-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-3] {
+.honda-typography[data-variant=heading-3] {
   --typography-font-family: var(--heading-3-font-family);
   --typography-font-weight: var(--heading-3-font-weight);
   --typography-font-size: var(--heading-3-font-size);
@@ -1088,7 +1088,7 @@
   --typography-letter-spacing: var(--heading-3-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-4] {
+.honda-typography[data-variant=heading-4] {
   --typography-font-family: var(--heading-4-font-family);
   --typography-font-weight: var(--heading-4-font-weight);
   --typography-font-size: var(--heading-4-font-size);
@@ -1096,7 +1096,7 @@
   --typography-letter-spacing: var(--heading-4-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-5] {
+.honda-typography[data-variant=heading-5] {
   --typography-font-family: var(--heading-5-font-family);
   --typography-font-weight: var(--heading-5-font-weight);
   --typography-font-size: var(--heading-5-font-size);
@@ -1104,7 +1104,7 @@
   --typography-letter-spacing: var(--heading-5-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-6] {
+.honda-typography[data-variant=heading-6] {
   --typography-font-family: var(--heading-6-font-family);
   --typography-font-weight: var(--heading-6-font-weight);
   --typography-font-size: var(--heading-6-font-size);
@@ -1112,7 +1112,7 @@
   --typography-letter-spacing: var(--heading-6-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-numbers] {
+.honda-typography[data-variant=heading-numbers] {
   --typography-font-family: var(--heading-numbers-font-family);
   --typography-font-weight: var(--heading-numbers-font-weight);
   --typography-font-size: var(--heading-numbers-font-size);
@@ -1120,7 +1120,7 @@
   --typography-letter-spacing: var(--heading-numbers-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=heading-footer] {
+.honda-typography[data-variant=heading-footer] {
   --typography-font-family: var(--heading-footer-font-family);
   --typography-font-weight: var(--heading-footer-font-weight);
   --typography-font-size: var(--heading-footer-font-size);
@@ -1128,7 +1128,7 @@
   --typography-letter-spacing: var(--heading-footer-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-large] {
+.honda-typography[data-variant=body-large] {
   --typography-font-family: var(--body-large-font-family);
   --typography-font-weight: var(--body-large-font-weight);
   --typography-font-size: var(--body-large-font-size);
@@ -1136,7 +1136,7 @@
   --typography-letter-spacing: var(--body-large-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-regular] {
+.honda-typography[data-variant=body-regular] {
   --typography-font-family: var(--body-regular-font-family);
   --typography-font-weight: var(--body-regular-font-weight);
   --typography-font-size: var(--body-regular-font-size);
@@ -1144,7 +1144,7 @@
   --typography-letter-spacing: var(--body-regular-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-small] {
+.honda-typography[data-variant=body-small] {
   --typography-font-family: var(--body-small-font-family);
   --typography-font-weight: var(--body-small-font-weight);
   --typography-font-size: var(--body-small-font-size);
@@ -1152,7 +1152,7 @@
   --typography-letter-spacing: var(--body-small-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-eyebrow] {
+.honda-typography[data-variant=body-eyebrow] {
   --typography-font-family: var(--body-eyebrow-font-family);
   --typography-font-weight: var(--body-eyebrow-font-weight);
   --typography-font-size: var(--body-eyebrow-font-size);
@@ -1160,7 +1160,7 @@
   --typography-letter-spacing: var(--body-eyebrow-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-cta] {
+.honda-typography[data-variant=body-cta] {
   --typography-font-family: var(--body-cta-font-family);
   --typography-font-weight: var(--body-cta-font-weight);
   --typography-font-size: var(--body-cta-font-size);
@@ -1168,7 +1168,7 @@
   --typography-letter-spacing: var(--body-cta-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-label] {
+.honda-typography[data-variant=body-label] {
   --typography-font-family: var(--body-label-font-family);
   --typography-font-weight: var(--body-label-font-weight);
   --typography-font-size: var(--body-label-font-size);
@@ -1176,7 +1176,7 @@
   --typography-letter-spacing: var(--body-label-letter-spacing);
 }
 
-.herohomepage-typography[data-variant=body-navigation] {
+.honda-typography[data-variant=body-navigation] {
   --typography-font-family: var(--body-navigation-font-family);
   --typography-font-weight: var(--body-navigation-font-weight);
   --typography-font-size: var(--body-navigation-font-size);
@@ -1184,7 +1184,7 @@
   --typography-letter-spacing: var(--body-navigation-letter-spacing);
 }
 
-.herohomepage-controls-top {
+.honda-controls-top {
   block-size: 2rem;
   /* Equivalent to 32px assuming 16px base */
   inline-size: 100%;
@@ -1193,13 +1193,13 @@
   /* Equivalent to 16px assuming 16px base */
 }
 
-.herohomepage-current-time,
-.herohomepage-duration {
+.honda-current-time,
+.honda-duration {
   position: absolute;
   pointer-events: none;
 }
 
-.herohomepage-duration {
+.honda-duration {
   inset-block-end: 0;
   inset-inline-end: 0;
   color: #fff;
@@ -1207,7 +1207,7 @@
   /* Equivalent to 8px assuming 16px base */
 }
 
-.herohomepage-current-time {
+.honda-current-time {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1216,28 +1216,28 @@
   pointer-events: none;
 }
 
-.herohomepage-controls-bottom {
+.honda-controls-bottom {
   block-size: auto;
   inline-size: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.herohomepage-subtitles-control {
+.honda-subtitles-control {
   position: relative;
 }
 
-.herohomepage-right-actions {
+.honda-right-actions {
   display: flex;
   gap: 0.5rem;
   /* Equivalent to 8px assuming 16px base */
 }
 
-.herohomepage-video-player-controls .herohomepage-current-time {
+.honda-video-player-controls .honda-current-time {
   color: #fff;
 }
 
-.herohomepage-progress-bar {
+.honda-progress-bar {
   inset-block-start: 0;
   inset-inline-start: 0;
   block-size: 0.125rem;
@@ -1247,7 +1247,7 @@
   cursor: pointer;
 }
 
-.herohomepage-progress-bar:before {
+.honda-progress-bar:before {
   content: "";
   display: block;
   position: absolute;
@@ -1259,11 +1259,11 @@
   transform: translate(-50%, -50%);
 }
 
-[dir="rtl"] .herohomepage-progress-bar:before {
+[dir="rtl"] .honda-progress-bar:before {
   transform: translate(50%, -50%);
 }
 
-.herohomepage-progress-knob {
+.honda-progress-knob {
   block-size: 1rem;
   /* Equivalent to 16px assuming 16px base */
   inline-size: 1rem;
@@ -1274,13 +1274,13 @@
   position: absolute;
 }
 
-.herohomepage-progress-knob:before {
+.honda-progress-knob:before {
   block-size: 200%;
   inline-size: 200%;
 }
 
-.herohomepage-progress-knob:after,
-.herohomepage-progress-knob:before {
+.honda-progress-knob:after,
+.honda-progress-knob:before {
   content: "";
   display: block;
   position: absolute;
@@ -1290,40 +1290,40 @@
   background: transparent;
 }
 
-[dir="rtl"] .herohomepage-progress-knob:after,
-[dir="rtl"] .herohomepage-progress-knob:before {
+[dir="rtl"] .honda-progress-knob:after,
+[dir="rtl"] .honda-progress-knob:before {
   transform: translate(100%, -50%);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .herohomepage-progress-knob:hover:after {
+  .honda-progress-knob:hover:after {
     background: #fff;
   }
 }
 
-.herohomepage-progress-after,
-.herohomepage-progress-before,
-.herohomepage-progress-hover {
+.honda-progress-after,
+.honda-progress-before,
+.honda-progress-hover {
   inset-block-start: 0;
   block-size: 0.125rem;
   /* Equivalent to 2px assuming 16px base */
   position: absolute;
 }
 
-.herohomepage-progress-before,
-.herohomepage-progress-hover {
+.honda-progress-before,
+.honda-progress-hover {
   background: #fff;
   inline-size: 0;
   inset-inline-start: 0;
 }
 
-.herohomepage-progress-after {
+.honda-progress-after {
   background: hsla(0, 0%, 100%, 0.3);
   inline-size: 100%;
   inset-inline-end: 0;
 }
 
-.herohomepage-text-tracks {
+.honda-text-tracks {
   position: absolute;
   inset-block-end: calc(100% + var(--o6-select-subtitles-inset-block-end));
   inset-inline-end: 0;
@@ -1333,11 +1333,11 @@
   overflow-y: auto;
 }
 
-.herohomepage-text-tracks:not([hidden]) {
+.honda-text-tracks:not([hidden]) {
   display: flex;
 }
 
-.herohomepage-text-track-button {
+.honda-text-track-button {
   cursor: pointer;
   border: 0;
   background: #fff;
@@ -1347,13 +1347,13 @@
   /* Equivalent to 10px assuming 16px base */
 }
 
-.herohomepage-text-track-button.herohomepage-is-active {
+.honda-text-track-button.honda-is-active {
   background: #054021;
   color: #fff;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .herohomepage-text-track-button:hover:not(.herohomepage-is-active) {
+  .honda-text-track-button:hover:not(.honda-is-active) {
     background: #eee;
     color: #191715;
   }
