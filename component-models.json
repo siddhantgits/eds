@@ -220,7 +220,7 @@
     "description": "Block model for Hero Homepage rendering",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text",
         "description": "Main title text for hero section",
         "label": "Title",
         "name": "title",
