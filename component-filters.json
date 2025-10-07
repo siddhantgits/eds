@@ -33,11 +33,5 @@
       "button",
       "title"
     ]
-  },
-  {
-    "id": "kards",
-    "components": [
-      "kard"
-    ]
   }
 ]
