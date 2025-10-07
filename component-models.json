@@ -195,5 +195,83 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "herohomepage",
+    "description": "Block model for Hero Homepage rendering",
+    "fields": [
+      {
+        "component": "aem-content",
+        "description": "Image URL for hero background",
+        "label": "Background Image",
+        "name": "backgroundImage",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Primary video URL for hero background",
+        "label": "Background Video",
+        "name": "backgroundVideo",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Poster video URL for hero background",
+        "label": "Poster Video",
+        "name": "posterVideo",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Main title text for hero section",
+        "label": "Title",
+        "name": "title",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Description text for hero section",
+        "label": "Description",
+        "name": "description",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "First call-to-action link",
+        "label": "CTA 1 Link",
+        "name": "cta_1_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "First call-to-action text",
+        "label": "CTA 1 Text",
+        "name": "cta_1_text",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Second call-to-action link",
+        "label": "CTA 2 Link",
+        "name": "cta_2_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Second call-to-action text",
+        "label": "CTA 2 Text",
+        "name": "cta_2_text",
+        "required": false,
+        "valueType": "string"
+      }
+    ]
   }
 ]
