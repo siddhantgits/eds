@@ -243,8 +243,8 @@
                     }
                   ],
                   "faq_title": "Frequently asked questions",
-                  "model": "faq",
-                  "name": "faq"
+                  "model": "frequentlyaskedquestions",
+                  "name": "frequentlyaskedquestions"
                 }
               }
             }
