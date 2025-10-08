@@ -161,12 +161,238 @@
     ]
   },
   {
+    "id": "footer",
+    "description": "Block model for Footer rendering",
+    "fields": [
+      {
+        "component": "image",
+        "description": "Logo image for the footer.",
+        "label": "Footer Logo",
+        "name": "logo",
+        "required": false,
+        "valueType": "object"
+      },
+      {
+        "component": "list",
+        "description": "List of social media links with icons.",
+        "label": "Social Links",
+        "name": "socialLinks",
+        "required": false,
+        "valueType": "object[]"
+      },
+      {
+        "component": "list",
+        "description": "Main navigation links in the footer.",
+        "label": "Navigation Links",
+        "name": "navigationLinks",
+        "required": false,
+        "valueType": "object[]"
+      },
+      {
+        "component": "list",
+        "description": "Policy links such as Privacy Notice, Terms of Use, etc.",
+        "label": "Policy Links",
+        "name": "policyLinks",
+        "required": false,
+        "valueType": "object[]"
+      },
+      {
+        "component": "text",
+        "description": "Copyright notice displayed in the footer.",
+        "label": "Copyright Text",
+        "name": "copyright",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "list",
+        "description": "Available languages for site selection.",
+        "label": "Language Selector",
+        "name": "languages",
+        "required": false,
+        "valueType": "object[]"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "frequentlyaskedquestions",
+    "description": "Block model for Frequently Asked Questions rendering",
+    "fields": [
+      {
+        "collapsed": false,
+        "component": "text",
+        "description": "The main title for the FAQ section.",
+        "group": "Header",
+        "label": "FAQ Title",
+        "name": "faq_title",
+        "placeholder": "Enter FAQ section title",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "group-list",
+        "description": "List of questions and answers.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Question",
+            "name": "question",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "label": "Answer",
+            "name": "answer",
+            "required": true,
+            "valueType": "string"
+          }
+        ],
+        "label": "FAQ Items",
+        "name": "faq_items",
+        "required": true,
+        "valueType": "object[]"
+      },
+      {
+        "component": "media",
+        "description": "Optional decorative image for the FAQ section.",
+        "label": "FAQ Decorative Image",
+        "name": "faq_image",
+        "required": false,
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "header",
+    "description": "Block model for Header rendering",
+    "fields": [
+      {
+        "component": "text",
+        "description": "Label for skip to content button.",
+        "label": "Skip to Content Label",
+        "name": "skipToContent_label",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Theme for skip to content button.",
+        "label": "Skip to Content Theme",
+        "name": "skipToContent_theme",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "image",
+        "description": "Image source for the site logo.",
+        "label": "Logo Image Source",
+        "name": "logo_src",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "URL for the site logo link.",
+        "label": "Logo Link",
+        "name": "logo_link",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "image",
+        "description": "Image source for the mobile menu icon.",
+        "label": "Mobile Menu Icon",
+        "name": "mobileMenu_icon",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "list",
+        "description": "Main navigation menu items.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Menu Item Label",
+            "name": "label",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Menu Item Link",
+            "name": "href",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "list",
+            "fields": [
+              {
+                "component": "text",
+                "label": "Submenu Item Label",
+                "name": "label",
+                "required": true,
+                "valueType": "string"
+              },
+              {
+                "component": "aem-content",
+                "label": "Submenu Item Link",
+                "name": "href",
+                "required": true,
+                "valueType": "string"
+              }
+            ],
+            "label": "Submenu Items",
+            "name": "submenu",
+            "required": false,
+            "valueType": "object[]"
+          }
+        ],
+        "label": "Main Navigation Menu",
+        "name": "menu",
+        "required": true,
+        "valueType": "object[]"
+      },
+      {
+        "component": "list",
+        "description": "Language selector links.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Language Label",
+            "name": "label",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Locale",
+            "name": "locale",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Language Link",
+            "name": "href",
+            "required": true,
+            "valueType": "string"
+          }
+        ],
+        "label": "Language Selector",
+        "name": "languages",
+        "valueType": "object[]"
       }
     ]
   },
@@ -275,6 +501,89 @@
     ]
   },
   {
+    "id": "interactive-list",
+    "description": "Block model for Interactive List rendering",
+    "fields": [
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Main headline of the block.",
+        "group": "Text",
+        "label": "Headline",
+        "name": "headline",
+        "placeholder": "Type block headline...",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Background image of the block.",
+        "label": "Background Image",
+        "name": "backgroundImage",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Link for CTA button.",
+        "label": "CTA Link",
+        "name": "ctaLink",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Text for CTA button.",
+        "label": "CTA Text",
+        "name": "ctaText",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "group",
+        "description": "List of cards in the block.",
+        "fields": [
+          {
+            "component": "aem-content",
+            "description": "Image URL for the card.",
+            "label": "Card Image",
+            "name": "image",
+            "required": false,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "description": "Alt text for card image.",
+            "label": "Image Alt Text",
+            "name": "imageAlt",
+            "required": false,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "description": "Title of the card.",
+            "label": "Card Title",
+            "name": "title",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "description": "Description text for the card.",
+            "label": "Card Description",
+            "name": "description",
+            "required": false,
+            "valueType": "string"
+          }
+        ],
+        "label": "Cards",
+        "name": "items",
+        "required": true,
+        "valueType": "object[]"
+      }
+    ]
+  },
+  {
     "id": "textandmedia",
     "description": "Block model for Text and Media rendering",
     "fields": [
@@ -335,6 +644,36 @@
         "label": "CTA Text",
         "name": "cta_text",
         "required": false
+      }
+    ]
+  },
+  {
+    "id": "video-player",
+    "description": "Block model for Video Player component",
+    "fields": [
+      {
+        "component": "aem-content",
+        "description": "Source URL for the main video.",
+        "label": "Video Source",
+        "name": "video_src",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Source URL for the poster/preview video.",
+        "label": "Poster Video Source",
+        "name": "poster_video_src",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "textfield",
+        "description": "Label for the play call to action button.",
+        "label": "CTA Text",
+        "name": "cta_text",
+        "required": false,
+        "valueType": "string"
       }
     ]
   }
