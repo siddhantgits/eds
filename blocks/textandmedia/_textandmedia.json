@@ -3,19 +3,19 @@
     {
       "title": "Text and Media",
       "id": "textandmedia",
-      "icon": "image-text-block",
+      "icon": "image-text-icon",
       "category": "content",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
+              "body": "\u003cp\u003eQiddiya Investment Company, a PIF giga project, offers promising investment opportunities. By harnessing the power of Play, we boost economic growth, elevate the quality of life, and secure our position as a global, go-to entertainment, sports and culture hub.\u003c/p\u003e",
               "cta_link": "/about/",
               "cta_text": "Learn more",
-              "description": "Qiddiya Investment Company, a PIF giga project, offers promising investment opportunities. By harnessing the power of Play, we boost economic growth, elevate the quality of life, and secure our position as a global, go-to entertainment, sports and culture hub.",
-              "media_image": "/content/dam/aemigrate/uploaded-folder/image/1754989656143.webp",
+              "media_image": "\u003cimg alt=\"Tuwaiq Mountains\" src=\"/content/dam/aemigrate/uploaded-folder/image/1754989656143.webp\" class=\"textandmedia-image textandmedia-enableTransitionIn textandmedia-isLoaded textandmedia-objectFitCover\" loading=\"lazy\"\u003e",
               "media_imageAlt": "Tuwaiq Mountains",
-              "media_imageMobile": "/content/dam/aemigrate/uploaded-folder/image/1754989656566.webp",
+              "media_imageSrc": "/content/dam/aemigrate/uploaded-folder/image/1754989656143.webp",
               "model": "textandmedia",
               "name": "textandmedia",
               "title": "Combining Play with investment"
@@ -32,61 +32,57 @@
       "fields": [
         {
           "component": "image",
-          "description": "The main image displayed in the block.",
-          "group": "Media",
-          "label": "Main Image",
-          "name": "media_image",
-          "required": true
+          "description": "The main image displayed.",
+          "label": "Image Source",
+          "name": "media_imageSrc",
+          "required": true,
+          "valueType": "string"
         },
         {
           "component": "text",
-          "description": "Alternative text for the main image.",
-          "group": "Media",
+          "description": "Alternative text for the image.",
           "label": "Image Alt Text",
           "name": "media_imageAlt",
-          "required": false
+          "required": false,
+          "valueType": "string"
         },
         {
-          "component": "image",
-          "description": "Image displayed on mobile devices.",
-          "group": "Media",
-          "label": "Mobile Image",
-          "name": "media_imageMobile",
-          "required": false
-        },
-        {
-          "component": "text",
-          "description": "Block heading/title.",
+          "collapsed": false,
+          "component": "richtext",
+          "description": "Section title.",
           "group": "Text",
           "label": "Title",
           "name": "title",
-          "placeholder": "Enter title here",
-          "required": true
+          "placeholder": "Enter a title",
+          "required": true,
+          "valueType": "string"
         },
         {
+          "collapsed": false,
           "component": "richtext",
-          "description": "Block description text.",
+          "description": "Main body text.",
           "group": "Text",
-          "label": "Description",
-          "name": "description",
-          "placeholder": "Enter block description here",
-          "required": true
+          "label": "Body",
+          "name": "body",
+          "placeholder": "Enter the body content",
+          "required": false,
+          "valueType": "string"
         },
         {
           "component": "aem-content",
-          "description": "URL for the Call to Action button.",
-          "group": "CTA",
+          "description": "Link for CTA button.",
           "label": "CTA Link",
           "name": "cta_link",
-          "required": false
+          "required": false,
+          "valueType": "string"
         },
         {
           "component": "text",
-          "description": "Text for the Call to Action button.",
-          "group": "CTA",
+          "description": "Text for CTA button.",
           "label": "CTA Text",
           "name": "cta_text",
-          "required": false
+          "required": false,
+          "valueType": "string"
         }
       ]
     }
