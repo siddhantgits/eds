@@ -427,8 +427,30 @@
     "description": "Block model for Hero Homepage rendering",
     "fields": [
       {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Main headline for the hero section.",
+        "group": "Text",
+        "label": "Title",
+        "name": "title",
+        "placeholder": "Enter hero title...",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Supporting description for the hero section.",
+        "group": "Text",
+        "label": "Description",
+        "name": "description",
+        "placeholder": "Enter description...",
+        "required": false,
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
-        "description": "Image URL for hero background",
+        "description": "Background image for the hero section.",
         "label": "Background Image",
         "name": "backgroundImage",
         "required": false,
@@ -436,7 +458,7 @@
       },
       {
         "component": "aem-content",
-        "description": "Primary video URL for hero background",
+        "description": "Background video URL for the hero section.",
         "label": "Background Video",
         "name": "backgroundVideo",
         "required": false,
@@ -444,57 +466,49 @@
       },
       {
         "component": "aem-content",
-        "description": "Poster video URL for hero background",
+        "description": "Poster video URL for the hero section.",
         "label": "Poster Video",
         "name": "posterVideo",
         "required": false,
         "valueType": "string"
       },
       {
-        "component": "richtext",
-        "description": "Main title text for hero section",
-        "label": "Title",
-        "name": "title",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "description": "Description text for hero section",
-        "label": "Description",
-        "name": "description",
-        "required": false,
-        "valueType": "string"
-      },
-      {
         "component": "aem-content",
-        "description": "First call-to-action link",
+        "description": "Primary call to action link.",
         "label": "CTA 1 Link",
-        "name": "cta_1_link",
+        "name": "cta1_link",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "First call-to-action text",
+        "description": "Text for the primary call to action.",
         "label": "CTA 1 Text",
-        "name": "cta_1_text",
+        "name": "cta1_text",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "description": "Second call-to-action link",
+        "description": "Secondary call to action link.",
         "label": "CTA 2 Link",
-        "name": "cta_2_link",
+        "name": "cta2_link",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "Second call-to-action text",
+        "description": "Text for the secondary call to action.",
         "label": "CTA 2 Text",
-        "name": "cta_2_text",
+        "name": "cta2_text",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Text for the video play call to action.",
+        "label": "Video CTA Text",
+        "name": "videoCta_text",
         "required": false,
         "valueType": "string"
       }

@@ -3,8 +3,8 @@
     {
       "title": "Hero Homepage",
       "id": "herohomepage",
-      "icon": "image-icon",
-      "category": "media",
+      "icon": "hero-icon",
+      "category": "content",
       "plugins": {
         "xwalk": {
           "page": {
@@ -12,14 +12,15 @@
             "template": {
               "backgroundImage": "/static/image/scarp/new/hero-blue.webp",
               "backgroundVideo": "https://qiddiya.com/assets/250121_City_Facts_16x9_EN_v25_aac66205e8/250121_City_Facts_16x9_EN_v25_aac66205e8.mp4",
-              "cta_1_link": "/about/sustainability/",
-              "cta_1_text": "Learn more",
-              "cta_2_link": "/",
+              "cta1_link": "/about/sustainability/",
+              "cta1_text": "Learn more",
+              "cta2_link": "/",
               "description": "Here, we present our second ESG report for Qiddiya City, further strengthening our commitment to raising the quality of life for all.",
               "model": "herohomepage",
               "name": "herohomepage",
               "posterVideo": "https://qiddiya.com/assets/ESG_Hero_component_video_2f18c3902a/ESG_Hero_component_video_2f18c3902a.mp4",
-              "title": "ESG: \u003cbr\u003e \u003cspan\u003eEmbedded in \u003c/span\u003e\u003cbr\u003e \u003cspan\u003eevery aspect\u003c/span\u003e \u003cbr\u003e of \u003cstrong\u003eQiddiya City\u003c/strong\u003e"
+              "title": "ESG: \u003cbr\u003e \u003cspan\u003eEmbedded in \u003c/span\u003e\u003cbr\u003e \u003cspan\u003eevery aspect\u003c/span\u003e \u003cbr\u003e of \u003cstrong\u003eQiddiya City\u003c/strong\u003e",
+              "videoCta_text": "Watch Video"
             }
           }
         }
@@ -32,8 +33,30 @@
       "description": "Block model for Hero Homepage rendering",
       "fields": [
         {
+          "collapsed": false,
+          "component": "richtext",
+          "description": "Main headline for the hero section.",
+          "group": "Text",
+          "label": "Title",
+          "name": "title",
+          "placeholder": "Enter hero title...",
+          "required": true,
+          "valueType": "string"
+        },
+        {
+          "collapsed": false,
+          "component": "richtext",
+          "description": "Supporting description for the hero section.",
+          "group": "Text",
+          "label": "Description",
+          "name": "description",
+          "placeholder": "Enter description...",
+          "required": false,
+          "valueType": "string"
+        },
+        {
           "component": "aem-content",
-          "description": "Image URL for hero background",
+          "description": "Background image for the hero section.",
           "label": "Background Image",
           "name": "backgroundImage",
           "required": false,
@@ -41,7 +64,7 @@
         },
         {
           "component": "aem-content",
-          "description": "Primary video URL for hero background",
+          "description": "Background video URL for the hero section.",
           "label": "Background Video",
           "name": "backgroundVideo",
           "required": false,
@@ -49,57 +72,49 @@
         },
         {
           "component": "aem-content",
-          "description": "Poster video URL for hero background",
+          "description": "Poster video URL for the hero section.",
           "label": "Poster Video",
           "name": "posterVideo",
           "required": false,
           "valueType": "string"
         },
         {
-          "component": "richtext",
-          "description": "Main title text for hero section",
-          "label": "Title",
-          "name": "title",
-          "required": true,
-          "valueType": "string"
-        },
-        {
-          "component": "richtext",
-          "description": "Description text for hero section",
-          "label": "Description",
-          "name": "description",
-          "required": false,
-          "valueType": "string"
-        },
-        {
           "component": "aem-content",
-          "description": "First call-to-action link",
+          "description": "Primary call to action link.",
           "label": "CTA 1 Link",
-          "name": "cta_1_link",
+          "name": "cta1_link",
           "required": false,
           "valueType": "string"
         },
         {
           "component": "text",
-          "description": "First call-to-action text",
+          "description": "Text for the primary call to action.",
           "label": "CTA 1 Text",
-          "name": "cta_1_text",
+          "name": "cta1_text",
           "required": false,
           "valueType": "string"
         },
         {
           "component": "aem-content",
-          "description": "Second call-to-action link",
+          "description": "Secondary call to action link.",
           "label": "CTA 2 Link",
-          "name": "cta_2_link",
+          "name": "cta2_link",
           "required": false,
           "valueType": "string"
         },
         {
           "component": "text",
-          "description": "Second call-to-action text",
+          "description": "Text for the secondary call to action.",
           "label": "CTA 2 Text",
-          "name": "cta_2_text",
+          "name": "cta2_text",
+          "required": false,
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "description": "Text for the video play call to action.",
+          "label": "Video CTA Text",
+          "name": "videoCta_text",
           "required": false,
           "valueType": "string"
         }

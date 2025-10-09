@@ -6,12 +6,6 @@ export default function decorate(b){
   if(pic) pic.classList.add('herohomepage-scarp');
   const bgMedia = b.querySelector('.herohomepage-background-media');
   if(bgMedia) bgMedia.classList.add('herohomepage-background-media');
-  const videoPlayer = b.querySelector('.herohomepage-video-player');
-  if(videoPlayer) videoPlayer.classList.add('herohomepage-video-player');
-  const video = b.querySelectorAll('.herohomepage-native-video');
-  video.forEach(v => v.classList.add('herohomepage-native-video','herohomepage-object-fit-cover'));
-  const controls = b.querySelector('.herohomepage-video-player-controls');
-  if(controls) controls.classList.add('herohomepage-video-player-controls','herohomepage-controls','herohomepage-is-hidden');
   const wrapper = b.querySelector('.herohomepage-wrapper');
   if(wrapper) wrapper.classList.add('herohomepage-wrapper');
   const title = b.querySelector('h1');
@@ -20,16 +14,26 @@ export default function decorate(b){
   if(desc) desc.classList.add('herohomepage-typography','herohomepage-description');
   const ctas = b.querySelector('.herohomepage-call-to-actions');
   if(ctas) ctas.classList.add('herohomepage-call-to-actions');
-  const ctaLinks = b.querySelectorAll('.herohomepage-call-to-actions .herohomepage-clickable-element');
-  ctaLinks.forEach(link=>{
-    link.classList.add('herohomepage-clickable-element');
-    const lbl = link.querySelector('.herohomepage-clickable-label');
-    if(lbl) lbl.classList.add('herohomepage-typography','herohomepage-clickable-label');
-    if(link.href && !link.href.includes(window.location.hostname)){
-      link.target='_blank';
-      link.rel='noopener noreferrer';
+  const ctaLinks = b.querySelectorAll('.herohomepage-call-to-actions a.herohomepage-clickable-element');
+  ctaLinks.forEach((a,i)=>{
+    a.classList.add('herohomepage-clickable-element');
+    if(i===0){
+      a.setAttribute('data-theme','primary');
+      a.setAttribute('data-size','default');
+      a.setAttribute('data-palette','palette-light');
     }
+    if(i===1){
+      a.setAttribute('data-theme','primary');
+      a.setAttribute('data-size','default');
+      a.setAttribute('data-palette','palette-4');
+    }
+    const label = a.querySelector('.herohomepage-clickable-label');
+    if(label) label.classList.add('herohomepage-typography','herohomepage-clickable-label');
   });
+  const videoPlayer = b.querySelector('.herohomepage-video-player');
+  if(videoPlayer) videoPlayer.classList.add('herohomepage-video-player');
   const playCta = b.querySelector('.herohomepage-play-call-to-action');
   if(playCta) playCta.classList.add('herohomepage-clickable-element','herohomepage-has-start-icon','herohomepage-play-call-to-action');
+  const playCtaLabel = b.querySelector('.herohomepage-play-call-to-action .herohomepage-clickable-label');
+  if(playCtaLabel) playCtaLabel.classList.add('herohomepage-typography','herohomepage-clickable-label');
 }
