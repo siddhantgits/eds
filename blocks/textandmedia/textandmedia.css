@@ -21,22 +21,22 @@
 .textandmedia-c27TextAndMedia-contentWrapper {
   grid-column: 1/-1;
   order: 1;
-  margin-block-end: 16px; /* Equivalent to var(--spacing-3) assuming 16px base */
+  margin-block-end: 16px;
   color: #1c2633;
 }
 .textandmedia-title {
-  --m5-eyebrow-margin-block-end: 16px; /* Equivalent to var(--spacing-3) assuming 16px base */
+  --m5-eyebrow-margin-block-end: 16px;
 }
 .textandmedia-bottomCopy {
-  margin-block-start: 16px; /* Equivalent to var(--spacing-3) assuming 16px base */
+  margin-block-start: 16px;
 }
 .textandmedia-ctaWrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 16px; /* Equivalent to var(--spacing-2) assuming 16px base */
-  margin-block-start: 16px; /* Equivalent to var(--spacing-3) assuming 16px base */
+  gap: 16px;
+  margin-block-start: 16px;
 }
 .textandmedia-c27TextAndMedia.textandmedia-centered .textandmedia-copyWrapper,
 .textandmedia-c27TextAndMedia.textandmedia-centered .textandmedia-eyebrow,
@@ -63,7 +63,7 @@
   text-align: center;
 }
 .textandmedia-captionText {
-  font-size: 0.9375rem; /* Equivalent to 15px assuming 16px base */
+  font-size: 0.9375rem;
   margin-block-start: 10px;
   color: var(--quinary-brand);
 }
@@ -136,7 +136,7 @@
 .textandmedia-heading {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 400;
-  font-size: 2rem; /* Equivalent to 32px assuming 16px base */
+  font-size: 2rem;
   line-height: 1.2;
   letter-spacing: 0;
 }
@@ -217,14 +217,14 @@
   --a4-blockquote-line-height: var(--heading-3-line-height);
   --a4-blockquote-letter-spacing: var(--heading-3-letter-spacing);
   --a4-blockquote-author-font-size: 50%;
-  --a4-blockquote-author-spacing: 8px; /* Equivalent to var(--spacing-1) assuming 16px base */
+  --a4-blockquote-author-spacing: 8px;
   --a4-blockquote-border-width: 4px;
   --a4-blockquote-border: var(--primary-base);
-  --a4-blockquote-indentation: 16px; /* Equivalent to var(--spacing-2) assuming 16px base */
-  --a4-element-margin: 16px; /* Equivalent to var(--spacing-2) assuming 16px base */
-  --a4-heading-margin: 64px; /* Equivalent to var(--spacing-4) assuming 16px base */
+  --a4-blockquote-indentation: 16px;
+  --a4-element-margin: 16px;
+  --a4-heading-margin: 64px;
   --a4-link-color: var(--primary-base);
-  --a4-list-indentation: 64px; /* Equivalent to var(--spacing-4) assuming 16px base */
+  --a4-list-indentation: 64px;
   --a4-ordered-list-style: decimal;
   --a4-unordered-list-style: circle;
   color: #1c2633;
@@ -232,7 +232,7 @@
 .textandmedia-a4RichText .textandmedia-uppercase {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.875rem; /* Equivalent to 14px assuming 16px base */
+  font-size: 0.875rem;
   line-height: 1;
   font-weight: 700;
 }
@@ -248,7 +248,7 @@
   margin-block: 0;
 }
 .textandmedia-a4RichText > :not(:last-child) {
-  margin-block-end: 16px; /* Equivalent to var(--a4-element-margin) assuming 16px base */
+  margin-block-end: 16px;
 }
 .textandmedia-a4RichText ul {
   list-style: circle;
@@ -257,7 +257,7 @@
   list-style: decimal;
 }
 .textandmedia-a4RichText :where(ul, ol) {
-  padding-inline-start: 64px; /* Equivalent to var(--a4-list-indentation) assuming 16px base */
+  padding-inline-start: 64px;
   text-align: start;
 }
 .textandmedia-a4RichText :where(strong) {
@@ -272,27 +272,27 @@
 .textandmedia-a4RichText :where(a, p, ol, ul, figcaption) {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 400;
-  font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  font-size: 1.125rem;
   line-height: 1.4;
   letter-spacing: 0;
 }
 .textandmedia-a4RichText :where(h1, h2, h3, h4, h5, h6):not(:first-child) {
-  margin-block-start: 64px; /* Equivalent to var(--a4-heading-margin) assuming 16px base */
+  margin-block-start: 64px;
 }
 .textandmedia-a4RichText blockquote {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 400;
-  font-size: 2rem; /* Equivalent to 32px assuming 16px base */
+  font-size: 2rem;
   line-height: 1.2;
   letter-spacing: 0;
   display: flex;
   flex-direction: column;
-  padding: 0 16px; /* Equivalent to var(--a4-blockquote-indentation) assuming 16px base */
+  padding: 0 16px;
   position: relative;
 }
 .textandmedia-a4RichText blockquote small {
   font-size: 50%;
-  margin-block-start: 8px; /* Equivalent to var(--a4-blockquote-author-spacing) assuming 16px base */
+  margin-block-start: 8px;
 }
 .textandmedia-a4RichText blockquote::before {
   content: "";
@@ -301,7 +301,7 @@
   inset-block-start: 0;
   inset-inline-start: 0;
   block-size: 100%;
-  inline-size: 4px; /* Equivalent to var(--a4-blockquote-border-width) assuming 16px base */
+  inline-size: 4px;
   background: var(--a4-blockquote-border);
 }
 .textandmedia-a4RichText table {
@@ -314,35 +314,35 @@
   --a4-tablerow-letter-spacing: var(--body-regular-letter-spacing);
   --a4-table-heading-font-family: var(--body-regular-font-family);
   --a4-table-heading-font-weight: 700;
-  --a4-table-heading-mobile-font-size: 1rem; /* Equivalent to 16px assuming 16px base */
-  --a4-table-heading-desktop-font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  --a4-table-heading-mobile-font-size: 1rem;
+  --a4-table-heading-desktop-font-size: 1.125rem;
   --a4-table-heading-line-height: 1.6;
   --a4-table-heading-letter-spacing: -0.02em;
-  --a4-table-heading-padding-block: 16px; /* Equivalent to var(--spacing-2) assuming 16px base */
+  --a4-table-heading-padding-block: 16px;
   --a4-table-heading-border-bottom: 1px solid #e0e0e0;
   --a4-table-row-font-family: var(--body-regular-font-family);
   --a4-table-row-font-weight: var(--body-regular-font-weight);
-  --a4-table-row-font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  --a4-table-row-font-size: 1rem;
   --a4-table-row-line-height: 1.6;
   --a4-table-row-border-bottom: 1px solid #eee;
-  --a4-table-row-padding-block: 16px; /* Equivalent to var(--spacing-2) assuming 16px base */
-  --a4-table-row-padding-inline: 8px; /* Equivalent to var(--spacing-1) assuming 16px base */
+  --a4-table-row-padding-block: 16px;
+  --a4-table-row-padding-inline: 8px;
   inline-size: 100%;
   border-collapse: collapse;
 }
 .textandmedia-a4RichText table th {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 700;
-  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  font-size: 1rem;
   line-height: 1.6;
   letter-spacing: -0.02em;
   border-block-end: 1px solid #e0e0e0;
-  padding: 16px 8px; /* Equivalent to var(--a4-table-heading-padding-block) and var(--a4-table-row-padding-inline) assuming 16px base */
+  padding: 16px 8px;
   text-align: start;
 }
 @media (min-width: 834px) {
   .textandmedia-a4RichText table th {
-    font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+    font-size: 1.125rem;
   }
 }
 .textandmedia-a4RichText table .textandmedia-isUnSorted [data-name] {
@@ -351,15 +351,15 @@
 .textandmedia-a4RichText table td {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 400;
-  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  font-size: 1rem;
   line-height: 1.6;
   letter-spacing: -0.02em;
   border-block-end: 1px solid #eee;
-  padding: 16px 8px; /* Equivalent to var(--a4-table-row-padding-block) and var(--a4-table-row-padding-inline) assuming 16px base */
+  padding: 16px 8px;
 }
 @media (min-width: 834px) {
   .textandmedia-a4RichText table td {
-    font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+    font-size: 1.125rem;
   }
 }
 .textandmedia-a4RichText table td {
@@ -429,7 +429,7 @@
 .textandmedia-a4RichText[data-body-size=large] {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 400;
-  font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  font-size: 1.125rem;
   line-height: 1.4;
   letter-spacing: 0;
 }
@@ -520,7 +520,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Equivalent to var(--spacing-1) assuming 16px base */
+  gap: 8px;
   outline: 0 solid var(--clickable-element-hover-border-color, var(--clickable-element-background-color));
 }
 .textandmedia-clickableElement-icon {
@@ -543,8 +543,8 @@
   position: relative;
 }
 .textandmedia-clickableElement[data-theme=primary] {
-  block-size: 48px; /* Equivalent to var(--clickable-element-block-size) assuming 16px base */
-  padding-inline: 20px; /* Equivalent to var(--clickable-element-padding-inline) assuming 16px base */
+  block-size: 48px;
+  padding-inline: 20px;
   border-radius: 100px;
   border: 2px solid var(--clickable-element-border-color, var(--clickable-element-base-border-color, var(--clickable-element-base-background-color)));
   transition-property: background-color, border-color;
@@ -566,8 +566,8 @@
   transition: transform 0.2s ease-in-out;
 }
 .textandmedia-clickableElement[data-theme=primary][data-size=default] {
-  --clickable-element-block-size: 48px; /* Equivalent to clamp(40px, calc(40px + 8 * (100vw - 375px) / 817), 48px) assuming 16px base */
-  --clickable-element-padding-inline: 20px; /* Equivalent to clamp(15px, calc(15px + 5 * (100vw - 375px) / 817), 20px) assuming 16px base */
+  --clickable-element-block-size: 48px;
+  --clickable-element-padding-inline: 20px;
 }
 .textandmedia-clickableElement[data-theme=primary][data-size=default] .textandmedia-icon {
   block-size: 24px;
@@ -601,7 +601,7 @@
 .textandmedia-typography[data-variant=heading-5] {
   font-family: proxima-nova-wide, bukra-wide, sans-serif;
   font-weight: 600;
-  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  font-size: 1rem;
   line-height: 1.2;
   letter-spacing: 0;
 }
