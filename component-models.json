@@ -427,29 +427,7 @@
     "description": "Block model for Hero Homepage rendering",
     "fields": [
       {
-        "collapsed": false,
-        "component": "richtext",
-        "description": "Main headline for the hero section.",
-        "group": "Text",
-        "label": "Title",
-        "name": "title",
-        "placeholder": "Enter hero title...",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "collapsed": false,
-        "component": "richtext",
-        "description": "Supporting description for the hero section.",
-        "group": "Text",
-        "label": "Description",
-        "name": "description",
-        "placeholder": "Enter description...",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
+        "component": "image",
         "description": "Background image for the hero section.",
         "label": "Background Image",
         "name": "backgroundImage",
@@ -457,58 +435,74 @@
         "valueType": "string"
       },
       {
-        "component": "aem-content",
-        "description": "Background video URL for the hero section.",
+        "component": "video",
+        "description": "Main background video source.",
         "label": "Background Video",
         "name": "backgroundVideo",
         "required": false,
         "valueType": "string"
       },
       {
-        "component": "aem-content",
-        "description": "Poster video URL for the hero section.",
+        "component": "video",
+        "description": "Poster or secondary video source.",
         "label": "Poster Video",
         "name": "posterVideo",
         "required": false,
         "valueType": "string"
       },
       {
+        "component": "richtext",
+        "description": "Main large heading for hero.",
+        "label": "Hero Title",
+        "name": "title",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Short description under the title.",
+        "label": "Hero Description",
+        "name": "description",
+        "required": false,
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
-        "description": "Primary call to action link.",
-        "label": "CTA 1 Link",
-        "name": "cta1_link",
+        "description": "URL for the main CTA button.",
+        "label": "Primary CTA Link",
+        "name": "primaryCtaLink",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "Text for the primary call to action.",
-        "label": "CTA 1 Text",
-        "name": "cta1_text",
+        "description": "Text for the primary CTA.",
+        "label": "Primary CTA Text",
+        "name": "primaryCtaText",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "description": "Secondary call to action link.",
-        "label": "CTA 2 Link",
-        "name": "cta2_link",
+        "description": "URL for the secondary CTA button.",
+        "label": "Secondary CTA Link",
+        "name": "secondaryCtaLink",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "Text for the secondary call to action.",
-        "label": "CTA 2 Text",
-        "name": "cta2_text",
+        "description": "Text for the secondary CTA.",
+        "label": "Secondary CTA Text",
+        "name": "secondaryCtaText",
         "required": false,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "Text for the video play call to action.",
-        "label": "Video CTA Text",
-        "name": "videoCta_text",
+        "description": "Text for the play video button.",
+        "label": "Play CTA Text",
+        "name": "playCtaText",
         "required": false,
         "valueType": "string"
       }
