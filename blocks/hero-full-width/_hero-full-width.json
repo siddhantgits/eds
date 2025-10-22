@@ -1,0 +1,81 @@
+{
+  "definitions": [
+    {
+      "title": "Hero Full Width",
+      "id": "hero-full-width",
+      "icon": "hero-icon",
+      "category": "content",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "backgroundVideo": "/content/dam/qiddiya-corporate/en/qiddiya-city/assets/CityFacts-ShortVersion.mp4",
+              "ctaLabel": "Learn more",
+              "ctaLink": "/qiddiya-city/",
+              "description": "\u003cp\u003eWhere thrilling entertainment \u0026amp; sports meet cultural experiences, in a destination unlike any other.\u0026nbsp;\u003c/p\u003e",
+              "heading": "\u003ch1\u003e\u003cspan class=\"hero-full-width__heading-weight-regular\"\u003eQiddiya City:\u0026nbsp;\u003c/span\u003e\u003c/h1\u003e\u003ch1\u003e\u003cspan class=\"hero-full-width__heading-weight-bolder\"\u003eThe First City\u0026nbsp;\u003c/span\u003e\u003c/h1\u003e\u003ch1\u003e\u003cspan class=\"hero-full-width__heading-weight-boldest\"\u003eBuilt for Play\u0026nbsp;\u003c/span\u003e\u003c/h1\u003e",
+              "model": "hero-full-width",
+              "name": "hero-full-width"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hero-full-width",
+      "description": "Block model for Hero Full Width rendering",
+      "fields": [
+        {
+          "collapsed": false,
+          "component": "richtext",
+          "description": "Main multi-line heading for hero.",
+          "group": "Content",
+          "label": "Heading",
+          "name": "heading",
+          "placeholder": "Type hero heading...",
+          "required": true,
+          "valueType": "string"
+        },
+        {
+          "collapsed": false,
+          "component": "richtext",
+          "description": "Description text below heading.",
+          "group": "Content",
+          "label": "Description",
+          "name": "description",
+          "placeholder": "Type hero description...",
+          "required": false,
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "description": "URL for main CTA button.",
+          "label": "CTA Link",
+          "name": "ctaLink",
+          "required": false,
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "description": "Label for main CTA button.",
+          "label": "CTA Label",
+          "name": "ctaLabel",
+          "required": false,
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "description": "MP4 video source URL for hero background.",
+          "label": "Background Video",
+          "name": "backgroundVideo",
+          "required": false,
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

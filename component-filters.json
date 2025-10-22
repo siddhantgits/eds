@@ -23,7 +23,11 @@
       "frequentlyaskedquestions",
       "video-player",
       "interactive-list",
-      "header"
+      "header",
+      "header-navigation",
+      "hero-full-width",
+      "scarpseparator",
+      "text-and-media"
     ]
   },
   {

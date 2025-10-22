@@ -1,0 +1,197 @@
+.scarpseparator {
+  height: 100%;
+  width: 100%;
+  overflow-y: visible;
+  position: relative;
+  z-index: 2;
+}
+.scarpseparator-scarp {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(60%);
+}
+.scarpseparator-scarp-image {
+  display: block;
+  inline-size: 100%;
+}
+.scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+  inset-inline-start: 0;
+  inline-size: 180px;
+  max-inline-size: 180px;
+  aspect-ratio: 180/228;
+  transform: translateY(68%);
+}
+@media screen and (max-width: 481px) {
+  .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    inline-size: 180px;
+    max-inline-size: 180px;
+    aspect-ratio: 180/228;
+    transform: translate(-18%, 75%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    aspect-ratio: 200/213;
+    inline-size: 168px;
+    max-inline-size: 168px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    inline-size: 224px;
+    aspect-ratio: 224/284;
+    max-inline-size: 224px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    inline-size: 315px;
+    aspect-ratio: 315/400;
+    max-inline-size: 315px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    inline-size: 420px;
+    aspect-ratio: 420/534;
+    max-inline-size: 420px;
+  }
+}
+.scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+  block-size: auto;
+  right: 0;
+  max-inline-size: 104px;
+  inline-size: 104px;
+  inline-size: 206px;
+  aspect-ratio: 206/211;
+  max-inline-size: 206px;
+  transform: translate(20%, 60%);
+}
+@media screen and (min-width: 481px) {
+  .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    aspect-ratio: 212/218;
+    inline-size: 212px;
+    max-inline-size: 212px;
+    transform: translate(0%, 60%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    aspect-ratio: 212/218;
+    inline-size: 212px;
+    max-inline-size: 212px;
+    transform: translate(0%, 60%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    inline-size: 284px;
+    aspect-ratio: 284/291;
+    max-inline-size: 284px;
+    transform: translate(0%, 60%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    inline-size: 400px;
+    aspect-ratio: 40/41;
+    max-inline-size: 400px;
+    transform: translate(0%, 60%);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    inline-size: 533px;
+    aspect-ratio: 533/546;
+    max-inline-size: 533px;
+    transform: translate(0%, 60%);
+  }
+}
+.scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+  --max-size: max(34%, 41px);
+  block-size: auto;
+  inline-size: 40%;
+  transform: translate(var(--max-size), 55%) rotate(-17deg);
+  block-size: auto;
+  inline-size: 40%;
+  inset-inline-end: 0;
+  max-inline-size: 40%;
+  max-width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 150px;
+    --max-size: max(35%, 50px);
+    transform: translate(var(--max-size), 60%) rotate(-17deg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 220px;
+    --max-size: max(34%, 78px);
+    transform: translate(var(--max-size), 65%) rotate(-17deg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 280px;
+    --max-size: max(34%, 100px);
+    transform: translate(var(--max-size), 70%) rotate(-17deg);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 300px;
+    transform: translate(var(--max-size), 50%) rotate(-17deg);
+  }
+}
+html[dir=rtl] .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+  inset-inline-start: 0;
+  transform: translateY(68%) rotate(0deg) scaleX(-1);
+}
+@media screen and (max-width: 481px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-aqua-left > .scarpseparator-scarp {
+    inline-size: 180px;
+    max-inline-size: 180px;
+    aspect-ratio: 180/228;
+    transform: translate(18%, 75%) rotate(0deg) scaleX(-1);
+  }
+}
+html[dir=rtl] .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+  left: 0;
+  right: auto;
+  transform: scaleX(-1) translateY(60%) translateX(20%);
+}
+@media screen and (min-width: 768px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-blue-right > .scarpseparator-scarp {
+    transform: scaleX(-1) translateY(60%);
+  }
+}
+html[dir=rtl] .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+  transform: translate(max(-34%, -41px), 55%) scaleX(-1) rotate(-17deg);
+}
+@media screen and (min-width: 768px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 150px;
+    transform: translate(max(-35%, -50px), 60%) scaleX(-1) rotate(-17deg);
+    left: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 220px;
+    transform: translate(max(-35%, -78px), 65%) scaleX(-1) rotate(-17deg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 280px;
+    transform: translate(max(-35%, -100px), 70%) scaleX(-1) rotate(-17deg);
+  }
+}
+@media screen and (min-width: 1920px) {
+  html[dir=rtl] .scarpseparator.scarpseparator-pink-right > .scarpseparator-scarp {
+    max-width: 300px;
+    transform: translate(max(-35%, -100px), 50%) scaleX(-1) rotate(-17deg);
+  }
+}

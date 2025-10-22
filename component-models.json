@@ -274,6 +274,92 @@
     ]
   },
   {
+    "id": "header-navigation",
+    "description": "Block model for the Header Navigation rendering",
+    "fields": [
+      {
+        "component": "aem-content",
+        "description": "URL for the logo redirect.",
+        "label": "Logo Link",
+        "name": "logo_link",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "container",
+        "description": "Main navigation items and their submenus.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Menu Label",
+            "name": "label",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Menu Link",
+            "name": "link",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "container",
+            "fields": [
+              {
+                "component": "text",
+                "label": "Submenu Label",
+                "name": "label",
+                "required": true,
+                "valueType": "string"
+              },
+              {
+                "component": "aem-content",
+                "label": "Submenu Link",
+                "name": "link",
+                "required": true,
+                "valueType": "string"
+              }
+            ],
+            "label": "Submenu",
+            "name": "submenu"
+          }
+        ],
+        "label": "Navigation Menu",
+        "name": "menu"
+      },
+      {
+        "component": "container",
+        "description": "Available languages for selection.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Language Label",
+            "name": "label",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Language Link",
+            "name": "link",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Language Code",
+            "name": "code",
+            "required": true,
+            "valueType": "string"
+          }
+        ],
+        "label": "Language Selector",
+        "name": "languages"
+      }
+    ]
+  },
+  {
     "id": "header",
     "description": "Block model for Header rendering",
     "fields": [
@@ -393,6 +479,58 @@
         "label": "Language Selector",
         "name": "languages",
         "valueType": "object[]"
+      }
+    ]
+  },
+  {
+    "id": "hero-full-width",
+    "description": "Block model for Hero Full Width rendering",
+    "fields": [
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Main multi-line heading for hero.",
+        "group": "Content",
+        "label": "Heading",
+        "name": "heading",
+        "placeholder": "Type hero heading...",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Description text below heading.",
+        "group": "Content",
+        "label": "Description",
+        "name": "description",
+        "placeholder": "Type hero description...",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "URL for main CTA button.",
+        "label": "CTA Link",
+        "name": "ctaLink",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Label for main CTA button.",
+        "label": "CTA Label",
+        "name": "ctaLabel",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "MP4 video source URL for hero background.",
+        "label": "Background Video",
+        "name": "backgroundVideo",
+        "required": false,
+        "valueType": "string"
       }
     ]
   },
@@ -588,6 +726,82 @@
         "name": "items",
         "required": true,
         "valueType": "object[]"
+      }
+    ]
+  },
+  {
+    "id": "scarpseparator",
+    "description": "Block model for Scarp Separator rendering",
+    "fields": [
+      {
+        "component": "aem-content",
+        "description": "The source URL for the separator image.",
+        "label": "Image Source",
+        "name": "image_src",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Alternative text for the separator image.",
+        "label": "Image Alt Text",
+        "name": "image_alt",
+        "required": false,
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "text-and-media",
+    "description": "Block model for Text and Media rendering",
+    "fields": [
+      {
+        "component": "aem-content",
+        "description": "The main image URL.",
+        "label": "Image",
+        "name": "media_image",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Alternative text for the image.",
+        "label": "Image Alt Text",
+        "name": "media_imageAlt",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Title text for the block.",
+        "label": "Title",
+        "name": "text_title",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Description text for the block.",
+        "label": "Description",
+        "name": "text_description",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Link for the CTA button.",
+        "label": "CTA Link",
+        "name": "cta_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Label for the CTA button.",
+        "label": "CTA Text",
+        "name": "cta_text",
+        "required": false,
+        "valueType": "string"
       }
     ]
   },
