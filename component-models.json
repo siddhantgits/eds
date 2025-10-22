@@ -165,6 +165,130 @@
     "description": "Block model for Footer rendering",
     "fields": [
       {
+        "component": "richtext",
+        "description": "HTML for the footer logo.",
+        "label": "Logo Markup",
+        "name": "logo",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "container",
+        "description": "List of social media links.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Icon Class",
+            "name": "icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Aria Label",
+            "name": "label",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "URL",
+            "name": "href",
+            "valueType": "string"
+          }
+        ],
+        "label": "Social Links",
+        "name": "socialLinks",
+        "valueType": "array"
+      },
+      {
+        "component": "container",
+        "description": "List of navigation links in the footer.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Link Title",
+            "name": "title",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Link URL",
+            "name": "href",
+            "valueType": "string"
+          }
+        ],
+        "label": "Navigation Links",
+        "name": "navigationLinks",
+        "valueType": "array"
+      },
+      {
+        "component": "container",
+        "description": "Language selector links.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Language Label",
+            "name": "label",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "URL",
+            "name": "href",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Language Code",
+            "name": "lang",
+            "valueType": "string"
+          },
+          {
+            "component": "boolean",
+            "label": "Active",
+            "name": "active",
+            "valueType": "boolean"
+          }
+        ],
+        "label": "Language Links",
+        "name": "languageLinks",
+        "valueType": "array"
+      },
+      {
+        "component": "container",
+        "description": "List of policy links.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Policy Title",
+            "name": "title",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "label": "Policy URL",
+            "name": "href",
+            "valueType": "string"
+          }
+        ],
+        "label": "Policy Links",
+        "name": "policyLinks",
+        "valueType": "array"
+      },
+      {
+        "component": "text",
+        "description": "Copyright Notice",
+        "label": "Copyright",
+        "name": "copyright",
+        "required": false,
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "footer",
+    "description": "Block model for Footer rendering",
+    "fields": [
+      {
         "component": "image",
         "description": "Logo image for the footer.",
         "label": "Footer Logo",
@@ -221,55 +345,6 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "frequentlyaskedquestions",
-    "description": "Block model for Frequently Asked Questions rendering",
-    "fields": [
-      {
-        "collapsed": false,
-        "component": "text",
-        "description": "The main title for the FAQ section.",
-        "group": "Header",
-        "label": "FAQ Title",
-        "name": "faq_title",
-        "placeholder": "Enter FAQ section title",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "group-list",
-        "description": "List of questions and answers.",
-        "fields": [
-          {
-            "component": "text",
-            "label": "Question",
-            "name": "question",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "richtext",
-            "label": "Answer",
-            "name": "answer",
-            "required": true,
-            "valueType": "string"
-          }
-        ],
-        "label": "FAQ Items",
-        "name": "faq_items",
-        "required": true,
-        "valueType": "object[]"
-      },
-      {
-        "component": "media",
-        "description": "Optional decorative image for the FAQ section.",
-        "label": "FAQ Decorative Image",
-        "name": "faq_image",
-        "required": false,
-        "valueType": "string"
       }
     ]
   },

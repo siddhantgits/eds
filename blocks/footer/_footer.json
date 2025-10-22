@@ -11,85 +11,88 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "copyright": "Qiddiya Investment Company ©2025",
-              "languages": [
+              "languageLinks": [
                 {
+                  "active": true,
                   "href": "/",
                   "label": "English",
-                  "locale": "en"
+                  "lang": "en"
                 },
                 {
+                  "active": false,
                   "href": "/ar/",
                   "label": "العربية",
-                  "locale": "ar"
+                  "lang": "ar"
                 }
               ],
-              "logo": {
-                "alt": "svg file",
-                "src": "/content/dam/aemigrate/uploaded-folder/image/1754989655129.svg+xml"
-              },
+              "logo": "\u003cspan class=\"qd-icon qd-icon--logo footer-qd-logo\"\u003e\u003cspan class=\"path1\"\u003e\u003c/span\u003e\u003cspan class=\"path2\"\u003e\u003c/span\u003e\u003cspan class=\"path3\"\u003e\u003c/span\u003e\u003cspan class=\"path4\"\u003e\u003c/span\u003e\u003cspan class=\"path5\"\u003e\u003c/span\u003e\u003cspan class=\"path6\"\u003e\u003c/span\u003e\u003cspan class=\"path7\"\u003e\u003c/span\u003e\u003cspan class=\"path8\"\u003e\u003c/span\u003e\u003cspan class=\"path9\"\u003e\u003c/span\u003e\u003cspan class=\"path10\"\u003e\u003c/span\u003e\u003cspan class=\"path11\"\u003e\u003c/span\u003e\u003cspan class=\"path12\"\u003e\u003c/span\u003e\u003cspan class=\"path13\"\u003e\u003c/span\u003e\u003cspan class=\"path14\"\u003e\u003c/span\u003e\u003cspan class=\"path15\"\u003e\u003c/span\u003e\u003cspan class=\"path16\"\u003e\u003c/span\u003e\u003cspan class=\"path17\"\u003e\u003c/span\u003e\u003cspan class=\"path18\"\u003e\u003c/span\u003e\u003cspan class=\"path19\"\u003e\u003c/span\u003e\u003cspan class=\"path20\"\u003e\u003c/span\u003e\u003cspan class=\"path21\"\u003e\u003c/span\u003e\u003cspan class=\"path22\"\u003e\u003c/span\u003e\u003cspan class=\"path23\"\u003e\u003c/span\u003e\u003cspan class=\"path24\"\u003e\u003c/span\u003e\u003cspan class=\"path25\"\u003e\u003c/span\u003e\u003c/span\u003e",
               "model": "footer",
               "name": "Footer",
               "navigationLinks": [
                 {
                   "href": "/about/",
-                  "label": "About"
+                  "title": "About"
                 },
                 {
                   "href": "/qiddiya-city/",
-                  "label": "Qiddiya City"
+                  "title": "Qiddiya City"
                 },
                 {
                   "href": "/press-room/",
-                  "label": "News"
+                  "title": "News"
+                },
+                {
+                  "href": "/awards/",
+                  "title": "Awards"
                 },
                 {
                   "href": "/careers/",
-                  "label": "Careers"
+                  "title": "Careers"
                 },
                 {
                   "href": "/contact/",
-                  "label": "Contact"
+                  "title": "Contact"
                 }
               ],
               "policyLinks": [
                 {
                   "href": "/privacy-notice/",
-                  "label": "Privacy Notice"
+                  "title": "Privacy Notice"
                 },
                 {
                   "href": "/terms-of-use/",
-                  "label": "Terms of Use"
+                  "title": "Terms of Use"
                 },
                 {
                   "href": "/cookie-policy/",
-                  "label": "Cookie Policy"
+                  "title": "Cookie Policy"
                 }
               ],
               "socialLinks": [
                 {
-                  "href": "https://twitter.com/qiddiya?lang=en",
-                  "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655153.svg+xml",
-                  "name": "x"
+                  "href": "https://x.com/qiddiya?lang=en",
+                  "icon": "qd-icon--x",
+                  "label": "X"
                 },
                 {
                   "href": "https://www.instagram.com/qiddiya/",
-                  "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655273.svg+xml",
-                  "name": "instagram"
+                  "icon": "qd-icon--instagram",
+                  "label": "Instagram"
                 },
                 {
                   "href": "https://www.youtube.com/@qiddiya",
-                  "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655342.svg+xml",
-                  "name": "youtube"
+                  "icon": "qd-icon--youtube",
+                  "label": "Youtube"
                 },
                 {
                   "href": "https://www.tiktok.com/@qiddiya_sa",
-                  "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655495.svg+xml",
-                  "name": "tiktok"
+                  "icon": "qd-icon--tiktok",
+                  "label": "TikTok"
                 },
                 {
                   "href": "https://sa.linkedin.com/company/qiddiya",
-                  "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655584.svg+xml",
-                  "name": "linkedin"
+                  "icon": "qd-icon--linkedin",
+                  "label": "LinkedIn"
                 }
               ]
             }
@@ -104,52 +107,122 @@
       "description": "Block model for Footer rendering",
       "fields": [
         {
-          "component": "image",
-          "description": "Logo image for the footer.",
-          "label": "Footer Logo",
+          "component": "richtext",
+          "description": "HTML for the footer logo.",
+          "label": "Logo Markup",
           "name": "logo",
-          "required": false,
-          "valueType": "object"
-        },
-        {
-          "component": "list",
-          "description": "List of social media links with icons.",
-          "label": "Social Links",
-          "name": "socialLinks",
-          "required": false,
-          "valueType": "object[]"
-        },
-        {
-          "component": "list",
-          "description": "Main navigation links in the footer.",
-          "label": "Navigation Links",
-          "name": "navigationLinks",
-          "required": false,
-          "valueType": "object[]"
-        },
-        {
-          "component": "list",
-          "description": "Policy links such as Privacy Notice, Terms of Use, etc.",
-          "label": "Policy Links",
-          "name": "policyLinks",
-          "required": false,
-          "valueType": "object[]"
-        },
-        {
-          "component": "text",
-          "description": "Copyright notice displayed in the footer.",
-          "label": "Copyright Text",
-          "name": "copyright",
           "required": false,
           "valueType": "string"
         },
         {
-          "component": "list",
-          "description": "Available languages for site selection.",
-          "label": "Language Selector",
-          "name": "languages",
+          "component": "container",
+          "description": "List of social media links.",
+          "fields": [
+            {
+              "component": "text",
+              "label": "Icon Class",
+              "name": "icon",
+              "valueType": "string"
+            },
+            {
+              "component": "text",
+              "label": "Aria Label",
+              "name": "label",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "label": "URL",
+              "name": "href",
+              "valueType": "string"
+            }
+          ],
+          "label": "Social Links",
+          "name": "socialLinks",
+          "valueType": "array"
+        },
+        {
+          "component": "container",
+          "description": "List of navigation links in the footer.",
+          "fields": [
+            {
+              "component": "text",
+              "label": "Link Title",
+              "name": "title",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "label": "Link URL",
+              "name": "href",
+              "valueType": "string"
+            }
+          ],
+          "label": "Navigation Links",
+          "name": "navigationLinks",
+          "valueType": "array"
+        },
+        {
+          "component": "container",
+          "description": "Language selector links.",
+          "fields": [
+            {
+              "component": "text",
+              "label": "Language Label",
+              "name": "label",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "label": "URL",
+              "name": "href",
+              "valueType": "string"
+            },
+            {
+              "component": "text",
+              "label": "Language Code",
+              "name": "lang",
+              "valueType": "string"
+            },
+            {
+              "component": "boolean",
+              "label": "Active",
+              "name": "active",
+              "valueType": "boolean"
+            }
+          ],
+          "label": "Language Links",
+          "name": "languageLinks",
+          "valueType": "array"
+        },
+        {
+          "component": "container",
+          "description": "List of policy links.",
+          "fields": [
+            {
+              "component": "text",
+              "label": "Policy Title",
+              "name": "title",
+              "valueType": "string"
+            },
+            {
+              "component": "aem-content",
+              "label": "Policy URL",
+              "name": "href",
+              "valueType": "string"
+            }
+          ],
+          "label": "Policy Links",
+          "name": "policyLinks",
+          "valueType": "array"
+        },
+        {
+          "component": "text",
+          "description": "Copyright Notice",
+          "label": "Copyright",
+          "name": "copyright",
           "required": false,
-          "valueType": "object[]"
+          "valueType": "string"
         }
       ]
     }

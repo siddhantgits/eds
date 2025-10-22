@@ -108,6 +108,106 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "copyright": "Qiddiya Investment Company ©2025",
+                  "languageLinks": [
+                    {
+                      "active": true,
+                      "href": "/",
+                      "label": "English",
+                      "lang": "en"
+                    },
+                    {
+                      "active": false,
+                      "href": "/ar/",
+                      "label": "العربية",
+                      "lang": "ar"
+                    }
+                  ],
+                  "logo": "<span class=\"qd-icon qd-icon--logo footer-qd-logo\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span><span class=\"path11\"></span><span class=\"path12\"></span><span class=\"path13\"></span><span class=\"path14\"></span><span class=\"path15\"></span><span class=\"path16\"></span><span class=\"path17\"></span><span class=\"path18\"></span><span class=\"path19\"></span><span class=\"path20\"></span><span class=\"path21\"></span><span class=\"path22\"></span><span class=\"path23\"></span><span class=\"path24\"></span><span class=\"path25\"></span></span>",
+                  "model": "footer",
+                  "name": "Footer",
+                  "navigationLinks": [
+                    {
+                      "href": "/about/",
+                      "title": "About"
+                    },
+                    {
+                      "href": "/qiddiya-city/",
+                      "title": "Qiddiya City"
+                    },
+                    {
+                      "href": "/press-room/",
+                      "title": "News"
+                    },
+                    {
+                      "href": "/awards/",
+                      "title": "Awards"
+                    },
+                    {
+                      "href": "/careers/",
+                      "title": "Careers"
+                    },
+                    {
+                      "href": "/contact/",
+                      "title": "Contact"
+                    }
+                  ],
+                  "policyLinks": [
+                    {
+                      "href": "/privacy-notice/",
+                      "title": "Privacy Notice"
+                    },
+                    {
+                      "href": "/terms-of-use/",
+                      "title": "Terms of Use"
+                    },
+                    {
+                      "href": "/cookie-policy/",
+                      "title": "Cookie Policy"
+                    }
+                  ],
+                  "socialLinks": [
+                    {
+                      "href": "https://x.com/qiddiya?lang=en",
+                      "icon": "qd-icon--x",
+                      "label": "X"
+                    },
+                    {
+                      "href": "https://www.instagram.com/qiddiya/",
+                      "icon": "qd-icon--instagram",
+                      "label": "Instagram"
+                    },
+                    {
+                      "href": "https://www.youtube.com/@qiddiya",
+                      "icon": "qd-icon--youtube",
+                      "label": "Youtube"
+                    },
+                    {
+                      "href": "https://www.tiktok.com/@qiddiya_sa",
+                      "icon": "qd-icon--tiktok",
+                      "label": "TikTok"
+                    },
+                    {
+                      "href": "https://sa.linkedin.com/company/qiddiya",
+                      "icon": "qd-icon--linkedin",
+                      "label": "LinkedIn"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Footer",
+          "id": "footer",
+          "icon": "footer-icon",
+          "category": "content",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "copyright": "Qiddiya Investment Company ©2025",
                   "languages": [
                     {
                       "href": "/",
@@ -204,47 +304,6 @@
                 "template": {
                   "name": "Fragment",
                   "model": "fragment"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Frequently Asked Questions",
-          "id": "frequentlyaskedquestions",
-          "icon": "help-outline",
-          "category": "content",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "faq_image": "/static/image/scarp/new/faq-green.webp",
-                  "faq_items": [
-                    {
-                      "answer": "<p>A PIF company and a giga project that plays a unique and exciting role in achieving the ambitions of Saudi Vision 2030, which strive to create a vibrant society, a thriving economy, and an ambitious nation.</p>",
-                      "question": "What is Qiddiya Investment Company?"
-                    },
-                    {
-                      "answer": "<p>Qiddiya Investment Company is the umbrella corporation under which other companies, including Qiddiya City &amp; Saudi Entertainment ventures (SEVEN).</p>",
-                      "question": "What’s the difference between Qiddiya Investment Company and Qiddiya City?"
-                    },
-                    {
-                      "answer": "<p>Play knows no particular age group. By that logic, neither do any of Qiddiya Investment Company’s projects.</p>",
-                      "question": "What age groups do Qiddiya Investment Company projects target?"
-                    },
-                    {
-                      "answer": "<p>By visiting our <a href=\"/contact/\">Investment Page</a>.</p>",
-                      "question": "How do investors get more information about QIC?"
-                    },
-                    {
-                      "answer": "<p>By visiting our <a href=\"/contact/vendors/\">Vendors Page</a>.</p>",
-                      "question": "How do vendors provide their services to Qiddiya Investment Company?"
-                    }
-                  ],
-                  "faq_title": "Frequently asked questions",
-                  "model": "frequentlyaskedquestions",
-                  "name": "frequentlyaskedquestions"
                 }
               }
             }
