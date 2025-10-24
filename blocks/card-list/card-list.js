@@ -19,7 +19,7 @@ export default function decorate(b) {
     }
   }
   const cards = b.querySelectorAll('.cardlist-content__card-item');
-  cards.forEach(card => {
+  cards.forEach((card) => {
     card.classList.add('cardlist-content__card-item');
     const img = card.querySelector('.cardlist-content__card-item__image');
     if (img) img.classList.add('cardlist-content__card-item__image');
