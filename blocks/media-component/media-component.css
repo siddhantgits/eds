@@ -1,0 +1,326 @@
+.media-component {
+  width: 100%;
+  position: relative;
+  --media-grid-mobile-columns: 6;
+  --media-grid-desktop-columns: 12;
+  --media-grid-columns: var(--media-grid-mobile-columns);
+  --media-basic-card-layout-row-gap: 48px;
+}
+@media screen and (min-width: 832px) {
+  .media-component {
+    --media-basic-card-layout-row-gap: 64px;
+  }
+}
+.media-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 83.36%), linear-gradient(180deg, #e5cff5 0%, #fff 100%);
+}
+.media-wrapper {
+  padding-block-start: 80px; /* Equivalent to var(--padding-block-start) assuming 16px base */
+  padding-bottom: 2rem; /* Equivalent to clamp(16px, 16px + 16 * (100vw - 375px) / 817, 32px) assuming 16px base */
+  display: grid;
+  width: 100%;
+  height: min-content;
+  grid-template: auto/repeat(var(--media-grid-columns, 6), 1fr);
+  column-gap: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  position: relative;
+  row-gap: var(--media-basic-card-layout-row-gap);
+  padding-inline: 6.25rem; /* Equivalent to var(--grid-padding) assuming 16px base */
+  margin-inline: auto;
+  inline-size: min(100%, 87rem); /* Equivalent to var(--grid-max-width) assuming 16px base */
+}
+.media-wrapper__video-embed {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.media-wrapper__video-embed .media-iframe-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.media-header,
+.media-heading {
+  display: flex;
+  flex-direction: column;
+}
+.media-header {
+  display: grid;
+  grid-template: auto/repeat(var(--media-grid-columns, 12), 1fr);
+  grid-column: 1/-1;
+  gap: 2rem; /* Equivalent to 32px assuming 16px base */
+}
+.media-heading {
+  gap: 1rem; /* Equivalent to 16px assuming 16px base */
+}
+.media-pre-title {
+  color: #1c2633; /* Equivalent to var(--on-secondary-base) */
+  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  letter-spacing: 0;
+}
+.media-title * {
+  font-weight: 400; /* Equivalent to var(--heading-2-font-weight) */
+  font-size: 2.5rem; /* Equivalent to var(--heading-2-font-size) assuming 16px base */
+  line-height: 1.2; /* Equivalent to var(--heading-2-line-height) */
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+.media-video-poster,
+.media-video-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.media-video-poster__video,
+.media-video-container__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.media-video-container__controls {
+  bottom: 0;
+}
+@media screen and (min-width: 832px) {
+  .media-component {
+    --media-grid-columns: var(--media-grid-desktop-columns);
+  }
+  .media-header {
+    grid-auto-columns: minmax(0, 1fr);
+    gap: 3rem; /* Equivalent to 48px assuming 16px base */
+  }
+  .media-heading {
+    grid-area: 1/1/span 2/6;
+  }
+  .media-description {
+    align-self: start;
+    padding-block-start: 2rem; /* Equivalent to 32px assuming 16px base */
+    grid-area: 1/7/span 2/12;
+    align-items: start;
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .media-video-poster,
+  .media-video-container {
+    height: auto;
+  }
+  .media-header {
+    gap: 3rem; /* Equivalent to 48px assuming 16px base */
+  }
+  .media-heading {
+    grid-column: 1/8;
+  }
+  .media-description {
+    grid-column: 8/12;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .media-pre-title {
+    font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  }
+  .media-video-poster,
+  .media-video-container {
+    aspect-ratio: 16/9;
+  }
+}
+.media-video-poster,
+.media-video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.media-video-poster__video,
+.media-video-container__video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  position: relative;
+}
+.media-video-hide {
+  display: none;
+}
+.media-video-poster__play-button {
+  --media-clickable-element-block-size: clamp(48px, calc(48px + 16 * (100vw - 375px) / 817), 64px);
+  background: transparent;
+  padding: 0;
+  block-size: var(--media-clickable-element-block-size);
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translate(calc(var(--media-clickable-element-block-size) * -0.5), -50%);
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Equivalent to var(--spacing-1) assuming 16px base */
+  z-index: 2;
+}
+.media-video-poster__play-button:focus-visible {
+  border-radius: 100px;
+  outline: 2px solid #fff; /* Equivalent to var(--white) */
+  outline-offset: 2px;
+}
+.media-video-poster__play-button:hover .media-video-poster__play-button__icon {
+  transform: translateX(0.2em);
+  background: transparent;
+  border-color: #fff; /* Equivalent to var(--white) */
+}
+.media-video-poster__play-button:hover .media-video-poster__play-button__icon::before {
+  color: #fff; /* Equivalent to var(--white) */
+}
+.media-video-poster__play-button:focus-visible .media-video-poster__play-button__icon {
+  background: transparent;
+  border-color: #fff; /* Equivalent to var(--white) */
+}
+.media-video-poster__play-button:focus-visible .media-video-poster__play-button__icon::before {
+  color: #fff; /* Equivalent to var(--white) */
+}
+.media-video-poster__play-button__icon {
+  block-size: var(--media-clickable-element-block-size);
+  inline-size: var(--media-clickable-element-block-size);
+  background: #fff; /* Equivalent to var(--white) */
+  border: 2px solid rgba(42, 42, 42, 0.1); /* Equivalent to var(--clickable-element-base-background-color) */
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-video-poster__play-button__icon::before {
+  font-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  color: #420f29; /* Equivalent to var(--dark-pink) */
+}
+.media-video-poster__play-button__text {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif; /* Equivalent to var(--default-font-family) */
+  font-weight: 600; /* Equivalent to var(--heading-5-font-weight) */
+  font-size: 1rem; /* Equivalent to var(--heading-5-font-size) assuming 16px base */
+  line-height: 1.2; /* Equivalent to var(--heading-5-line-height) */
+  letter-spacing: 0;
+  color: #fff; /* Equivalent to var(--white) */
+  padding-inline-end: 0.5rem; /* Equivalent to var(--spacing-1) assuming 16px base */
+}
+.media-video-poster__image {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.media-video-container.media-show-controls .media-video-container__controls {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all ease 0.13s;
+}
+.media-video-container__controls {
+  position: absolute;
+  width: 100%;
+  padding: 1rem; /* Equivalent to 16px assuming 16px base */
+  color: #fff; /* Equivalent to var(--white) */
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5) 75%);
+  z-index: 2;
+  bottom: -0.9375rem; /* Equivalent to -15px assuming 16px base */
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease 0.08s;
+}
+.media-video-container__controls__timer {
+  position: relative;
+  width: 100%;
+  block-size: 2rem; /* Equivalent to 32px assuming 16px base */
+  margin-bottom: 1rem; /* Equivalent to 16px assuming 16px base */
+}
+.media-video-container__controls__timer__progress-area {
+  width: 100%;
+  height: 0.3125rem; /* Equivalent to 5px assuming 16px base */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.media-video-container__controls__timer__progress-area__progress-bar {
+  background-color: #fff; /* Equivalent to var(--white) */
+  height: 0.1875rem; /* Equivalent to 3px assuming 16px base */
+}
+.media-video-container__controls__timer__progress-area__pointer {
+  background: transparent;
+  border: 2px solid #fff; /* Equivalent to var(--white) */
+  width: 1rem; /* Equivalent to 16px assuming 16px base */
+  height: 1rem; /* Equivalent to 16px assuming 16px base */
+  display: block;
+  border-radius: 50%;
+}
+.media-video-container__controls__timer__progress-area__progress-pending {
+  height: 0.1875rem; /* Equivalent to 3px assuming 16px base */
+  background-color: rgba(255, 255, 255, 0.302);
+  flex: 1;
+}
+.media-video-container__controls__timer__current-time {
+  left: 0;
+}
+.media-video-container__controls__timer__duration {
+  right: 0;
+}
+.media-video-container__controls__timer__current-time,
+.media-video-container__controls__timer__duration {
+  position: absolute;
+  inset-block-end: 0;
+}
+.media-video-container__controls__buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Equivalent to 8px assuming 16px base */
+}
+.media-video-container__controls__buttons__icon {
+  font-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+}
+.media-video-container__controls__buttons--button {
+  background-color: #350c21; /* Equivalent to var(--tertiary-base) */
+  color: #fff; /* Equivalent to var(--white) */
+  border: 2px solid #350c21; /* Equivalent to var(--tertiary-base) */
+  border-radius: 50%;
+  cursor: pointer;
+  width: 3rem; /* Equivalent to 48px assuming 16px base */
+  height: 3rem; /* Equivalent to 48px assuming 16px base */
+}
+.media-video-container__controls__buttons--button:focus-visible {
+  outline: 2px solid #350c21; /* Equivalent to var(--tertiary-base) */
+  outline-offset: 2px;
+}
+.media-video-container__controls__buttons--button:first-child {
+  margin-right: auto;
+}
+.media-video-container__controls__buttons--button:hover {
+  background-color: #fff; /* Equivalent to var(--white) */
+  color: #350c21; /* Equivalent to var(--tertiary-base) */
+}
+html[dir=rtl] .media-video-container__controls__timer__current-time {
+  right: 0;
+  left: unset;
+}
+html[dir=rtl] .media-video-container__controls__timer__duration {
+  left: 0;
+  right: unset;
+}
+html[dir=rtl] .media-video-container__controls__buttons--button:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+html[dir=rtl] .media-video-poster__play-button {
+  transform: translate(calc(var(--media-clickable-element-block-size) * 0.5), -50%);
+}
+html[dir=rtl] .media-video-poster__play-button:hover .media-video-poster__play-button__icon {
+  transform: translateX(-0.2em);
+}

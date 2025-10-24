@@ -48,11 +48,10 @@
         "button",
         "title",
         "hero",
-        "kards",
+        "cards",
         "columns",
-        "fragment",
-        "honda"
-      ,"herohomepage","textandmedia","footer","frequentlyaskedquestions","video-player","interactive-list","header","header-navigation","hero-full-width","scarpseparator","text-and-media"]
+        "fragment"
+      ,"text-and-media","scarpseparator","hero-full-width","header-navigation","media-component","faq","footer","card-list"]
     }
   ]
 }

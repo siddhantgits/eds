@@ -83,6 +83,76 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Card List",
+          "id": "card-list",
+          "icon": "card-list-icon",
+          "category": "content",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "cards": [
+                    {
+                      "description": "<p>One of Qiddiya Investment Company’s main goals is to establish fun-filled destinations for thrill-seekers, including both locals and visitors.</p>",
+                      "image_alt": "Six Flags Qiddiya City offers thrilling rides and immersive attractions.",
+                      "image_src": "/content/dam/aemigrate/uploaded-folder/image/card1-home.webp",
+                      "title": "Entertainment"
+                    },
+                    {
+                      "description": "<p>Qiddiya Investment Company promotes sports by developing facilities, establishing strategic partnerships, and hosting sporting events of all kinds—including esports and motorsports—thus catering to athletes, fans, and the industry at large.</p>",
+                      "image_alt": "Qiddiya Speed Park Track at night, built for world-class motorsport and high-speed thrills.",
+                      "image_src": "/content/dam/aemigrate/uploaded-folder/image/card2-home.webp",
+                      "title": "Sports"
+                    },
+                    {
+                      "description": "<p>This is the stage on which the Kingdom showcases its rich culture and traditions to the world and the bridge that connects us to the wonderful things the rest of the world has to offer.</p>",
+                      "image_alt": "Illuminated Performing Arts Centre situated on the edge of the Tuwaiq Mountains.",
+                      "image_src": "/content/dam/aemigrate/uploaded-folder/image/card3-home.webp",
+                      "title": "Culture"
+                    }
+                  ],
+                  "cta_link": "/qiddiya-city/",
+                  "cta_text": "Explore Qiddiya City",
+                  "heading": "<h2>Bringing entertainment, sports, and culture to the forefront</h2>",
+                  "model": "card-list",
+                  "name": "card-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards",
+                  "filter": "cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Card",
+                  "model": "card"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
@@ -92,6 +162,47 @@
                 "template": {
                   "columns": "2",
                   "rows": "1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "FAQ Accordion",
+          "id": "faq",
+          "icon": "faq-icon",
+          "category": "content",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "faqItems": [
+                    {
+                      "answer": "<p>A PIF company that plays a unique and exciting role in achieving the ambitions of Saudi Vision 2030, which strive to create a vibrant society, a thriving economy, and an ambitious nation.</p>",
+                      "question": "What is Qiddiya Investment Company?"
+                    },
+                    {
+                      "answer": "<p>Qiddiya Investment Company is the umbrella corporation which includes other companies; Qiddiya City &amp; <a href=\"https://seven.sa/\" target=\"_blank\" tabindex=\"-1\">Saudi Entertainment Ventures (SEVEN)</a>.</p>",
+                      "question": "What’s the difference between Qiddiya Investment Company and Qiddiya City?"
+                    },
+                    {
+                      "answer": "<p>Play knows no particular age group. By that logic, neither do any of Qiddiya Investment Company’s projects.</p>",
+                      "question": "What age groups do Qiddiya Investment Company projects target?"
+                    },
+                    {
+                      "answer": "<p>By visiting our&nbsp;<a href=\"/contact/\" target=\"_self\" tabindex=\"-1\">Investment Page</a>.</p>",
+                      "question": "How do investors get more information about Qiddiya Investment Company?"
+                    },
+                    {
+                      "answer": "<p>By visiting our&nbsp;<a href=\"/contact/vendors/\" target=\"_self\" tabindex=\"-1\">Vendors Page</a>.</p>",
+                      "question": "How do vendors provide their services to Qiddiya Investment Company?"
+                    }
+                  ],
+                  "image": "/content/dam/aemigrate/uploaded-folder/image/palette-aqua-scarp.png",
+                  "model": "faqAccordion",
+                  "name": "faqAccordion",
+                  "title": "<h2>Frequently asked questions</h2>"
                 }
               }
             }
@@ -190,103 +301,6 @@
                       "href": "https://sa.linkedin.com/company/qiddiya",
                       "icon": "qd-icon--linkedin",
                       "label": "LinkedIn"
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Footer",
-          "id": "footer",
-          "icon": "footer-icon",
-          "category": "content",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "copyright": "Qiddiya Investment Company ©2025",
-                  "languages": [
-                    {
-                      "href": "/",
-                      "label": "English",
-                      "locale": "en"
-                    },
-                    {
-                      "href": "/ar/",
-                      "label": "العربية",
-                      "locale": "ar"
-                    }
-                  ],
-                  "logo": {
-                    "alt": "svg file",
-                    "src": "/content/dam/aemigrate/uploaded-folder/image/1754989655129.svg+xml"
-                  },
-                  "model": "footer",
-                  "name": "Footer",
-                  "navigationLinks": [
-                    {
-                      "href": "/about/",
-                      "label": "About"
-                    },
-                    {
-                      "href": "/qiddiya-city/",
-                      "label": "Qiddiya City"
-                    },
-                    {
-                      "href": "/press-room/",
-                      "label": "News"
-                    },
-                    {
-                      "href": "/careers/",
-                      "label": "Careers"
-                    },
-                    {
-                      "href": "/contact/",
-                      "label": "Contact"
-                    }
-                  ],
-                  "policyLinks": [
-                    {
-                      "href": "/privacy-notice/",
-                      "label": "Privacy Notice"
-                    },
-                    {
-                      "href": "/terms-of-use/",
-                      "label": "Terms of Use"
-                    },
-                    {
-                      "href": "/cookie-policy/",
-                      "label": "Cookie Policy"
-                    }
-                  ],
-                  "socialLinks": [
-                    {
-                      "href": "https://twitter.com/qiddiya?lang=en",
-                      "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655153.svg+xml",
-                      "name": "x"
-                    },
-                    {
-                      "href": "https://www.instagram.com/qiddiya/",
-                      "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655273.svg+xml",
-                      "name": "instagram"
-                    },
-                    {
-                      "href": "https://www.youtube.com/@qiddiya",
-                      "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655342.svg+xml",
-                      "name": "youtube"
-                    },
-                    {
-                      "href": "https://www.tiktok.com/@qiddiya_sa",
-                      "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655495.svg+xml",
-                      "name": "tiktok"
-                    },
-                    {
-                      "href": "https://sa.linkedin.com/company/qiddiya",
-                      "icon": "/content/dam/aemigrate/uploaded-folder/image/1754989655584.svg+xml",
-                      "name": "linkedin"
                     }
                   ]
                 }
@@ -420,124 +434,6 @@
           }
         },
         {
-          "title": "Header",
-          "id": "header",
-          "icon": "header-icon",
-          "category": "navigation",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "languages": [
-                    {
-                      "href": "/",
-                      "label": "English",
-                      "locale": "en"
-                    },
-                    {
-                      "href": "/ar/",
-                      "label": "العربية",
-                      "locale": "ar"
-                    }
-                  ],
-                  "logo_link": "/",
-                  "logo_src": "/content/dam/aemigrate/uploaded-folder/image/1754989654875.svg+xml",
-                  "menu": [
-                    {
-                      "href": "/about/",
-                      "label": "About",
-                      "submenu": [
-                        {
-                          "href": "/about/",
-                          "label": "Company"
-                        },
-                        {
-                          "href": "/about/leadership/",
-                          "label": "Leadership"
-                        },
-                        {
-                          "href": "/about/sustainability/",
-                          "label": "Sustainability"
-                        }
-                      ]
-                    },
-                    {
-                      "href": "/qiddiya-city/",
-                      "label": "Qiddiya City",
-                      "submenu": [
-                        {
-                          "href": "/qiddiya-city/",
-                          "label": "Overview"
-                        },
-                        {
-                          "href": "/playqiddiyacity/",
-                          "label": "Play Qiddiya City"
-                        },
-                        {
-                          "href": "/qiddiya-city/progress/",
-                          "label": "Construction Progress"
-                        },
-                        {
-                          "href": "/qiddiya-city/assets/",
-                          "label": "Qiddiya City Assets"
-                        }
-                      ]
-                    },
-                    {
-                      "href": "/press-room/",
-                      "label": "News",
-                      "submenu": [
-                        {
-                          "href": "/press-room/",
-                          "label": "Press Releases"
-                        },
-                        {
-                          "href": "/awards/",
-                          "label": "Awards"
-                        }
-                      ]
-                    },
-                    {
-                      "href": "/careers/",
-                      "label": "Careers",
-                      "submenu": [
-                        {
-                          "href": "/careers/",
-                          "label": "Careers"
-                        },
-                        {
-                          "href": "/training-programmes/",
-                          "label": "Training Programmes"
-                        }
-                      ]
-                    },
-                    {
-                      "href": "/contact/",
-                      "label": "Contact",
-                      "submenu": [
-                        {
-                          "href": "/contact/",
-                          "label": "Investor Inquiries"
-                        },
-                        {
-                          "href": "/contact/vendors/",
-                          "label": "Vendor Registration"
-                        }
-                      ]
-                    }
-                  ],
-                  "mobileMenu_icon": "/content/dam/aemigrate/uploaded-folder/image/1754989654895.svg+xml",
-                  "model": "header",
-                  "name": "Header",
-                  "skipToContent_label": "Skip content",
-                  "skipToContent_theme": "primary"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Hero Full Width",
           "id": "hero-full-width",
           "icon": "hero-icon",
@@ -560,7 +456,7 @@
           }
         },
         {
-          "title": "hero",
+          "title": "Hero",
           "id": "hero",
           "plugins": {
             "xwalk": {
@@ -575,67 +471,21 @@
           }
         },
         {
-          "title": "Hero Homepage",
-          "id": "herohomepage",
-          "icon": "hero-icon",
-          "category": "content",
+          "title": "Media Component",
+          "id": "media-component",
+          "icon": "media-icon",
+          "category": "media",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "backgroundImage": "/static/image/scarp/new/hero-blue.webp",
-                  "backgroundVideo": "https://qiddiya.com/assets/250121_City_Facts_16x9_EN_v25_aac66205e8/250121_City_Facts_16x9_EN_v25_aac66205e8.mp4",
-                  "description": "Here, we present our second ESG report for Qiddiya City, further strengthening our commitment to raising the quality of life for all.",
-                  "model": "herohomepage",
-                  "name": "herohomepage",
-                  "playCtaText": "Watch Video",
-                  "posterVideo": "https://qiddiya.com/assets/ESG_Hero_component_video_2f18c3902a/ESG_Hero_component_video_2f18c3902a.mp4",
-                  "primaryCtaLink": "/about/sustainability/",
-                  "primaryCtaText": "Learn more",
-                  "secondaryCtaLink": "/",
-                  "title": "ESG: <br> <span>Embedded in </span><br> <span>every aspect</span> <br> of <strong>Qiddiya City</strong>"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Interactive List",
-          "id": "interactive-list",
-          "icon": "list-icon",
-          "category": "content",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "backgroundImage": "/static/image/scarp/new/pillars-green.webp",
-                  "ctaLink": "/qiddiya-city/",
-                  "ctaText": "Explore Qiddiya City",
-                  "headline": "<h2>Bringing entertainment, sports, and culture to the forefront</h2>",
-                  "items": [
-                    {
-                      "description": "<p>One of Qiddiya Investment Company’s main goals is to establish fun-filled destinations for thrill-seekers, including both locals and visitors.</p>",
-                      "image": "/content/dam/aemigrate/uploaded-folder/image/1754989656235.webp",
-                      "imageAlt": "Six Flags Qiddiya City offers thrilling rides and immersive attractions.",
-                      "title": "Entertainment"
-                    },
-                    {
-                      "description": "<p>Qiddiya Investment Company promotes sports by developing facilities, establishing strategic partnerships, and hosting sporting events of all kinds—including esports and motorsports—thus catering to athletes, fans, and the industry at large.</p>",
-                      "image": "/content/dam/aemigrate/uploaded-folder/image/1754989656427.webp",
-                      "imageAlt": "Qiddiya Speed Park Track at night, built for world-class motorsport and high-speed thrills.",
-                      "title": "Sports"
-                    },
-                    {
-                      "description": "<p>This is the stage on which the Kingdom showcases its rich culture and traditions to the world and the bridge that connects us to the wonderful things the rest of the world has to offer.</p>",
-                      "image": "/content/dam/aemigrate/uploaded-folder/image/1754989656316.webp",
-                      "imageAlt": "Illuminated Performing Arts Centre situated on the edge of the Tuwaiq Mountains.",
-                      "title": "Culture"
-                    }
-                  ],
-                  "model": "interactive-list",
-                  "name": "interactive-list"
+                  "mainVideoSrc": "/content/dam/qiddiya-corporate/en/home/assets/SetPlayFree_EN_16x9_1080p_90s_nobars_weboptimised.mp4",
+                  "mediaTitle": "<h2><span class=\"media-semi-bold\">The ambassador of Play</span></h2>",
+                  "model": "media-component",
+                  "name": "media-component",
+                  "playButtonText": "Watch Video",
+                  "posterVideoSrc": "/content/dam/qiddiya-corporate/en/home/assets/SetPlayFree_EN_POSTER_16x9_720p_nobars_weboptimised.mp4"
                 }
               }
             }
@@ -678,50 +528,6 @@
                   "name": "text-and-media",
                   "text_description": "<p>Qiddiya Investment Company, a PIF company, offers promising investment opportunities. By harnessing the power of Play, we boost economic growth, and elevate the quality of life.</p>",
                   "text_title": "<h2>Combining Play with<br>investment</h2>"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Text and Media",
-          "id": "textandmedia",
-          "icon": "image-text-icon",
-          "category": "content",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "body": "<p>Qiddiya Investment Company, a PIF giga project, offers promising investment opportunities. By harnessing the power of Play, we boost economic growth, elevate the quality of life, and secure our position as a global, go-to entertainment, sports and culture hub.</p>",
-                  "cta_link": "/about/",
-                  "cta_text": "Learn more",
-                  "media_image": "<img alt=\"Tuwaiq Mountains\" src=\"/content/dam/aemigrate/uploaded-folder/images/content1_home.webp\" class=\"textandmedia-image textandmedia-enableTransitionIn textandmedia-isLoaded textandmedia-objectFitCover\" loading=\"lazy\">",
-                  "media_imageAlt": "Tuwaiq Mountains",
-                  "media_imageSrc": "/content/dam/aemigrate/uploaded-folder/images/content1_home.webp",
-                  "model": "textandmedia",
-                  "name": "textandmedia",
-                  "title": "Combining Play with investment"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Video Player",
-          "id": "video-player",
-          "icon": "video-icon",
-          "category": "media",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "cta_text": "Watch Video",
-                  "model": "video-player",
-                  "name": "video-player",
-                  "poster_video_src": "https://qiddiya.com/assets/ESG_Hero_component_video_2f18c3902a/ESG_Hero_component_video_2f18c3902a.mp4",
-                  "video_src": "https://qiddiya.com/assets/250121_City_Facts_16x9_EN_v25_aac66205e8/250121_City_Facts_16x9_EN_v25_aac66205e8.mp4"
                 }
               }
             }

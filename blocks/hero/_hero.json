@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "hero",
+      "title": "Hero",
       "id": "hero",
       "plugins": {
         "xwalk": {

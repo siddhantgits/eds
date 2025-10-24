@@ -1,0 +1,180 @@
+.cardlist-wrapper {
+  position: relative;
+}
+.cardlist-background {
+  position: absolute;
+  inset: 0 0 auto;
+  block-size: var(--block-size, 0);
+  z-index: 0;
+  background: radial-gradient(75.73% 47.45% at 0 -0.26%, transparent 0, rgba(197, 215, 206, 0.2) 100%), radial-gradient(51.83% 92.71% at 75.18% 24.92%, hsla(0, 0%, 100%, 0.7) 0, hsla(0, 0%, 100%, 0) 100%), linear-gradient(180deg, #cbf9e3 100%, #e5fcf1 0, #fff 0), #fff;
+}
+.cardlist-content {
+  --basic-card-layout-row-gap: var(--grid-gap);
+  padding-block-start: var(--padding-block-start);
+  padding-block-end: var(--padding-block-end);
+  display: grid;
+  grid-template: auto/repeat(var(--available-columns, var(--grid-columns, 12)), 1fr);
+  column-gap: var(--grid-gap);
+  position: relative;
+  row-gap: var(--basic-card-layout-row-gap);
+  inline-size: min(100%, 1392px); /* Equivalent to 1392px assuming 16px base */
+  padding-inline: clamp(2rem, 2rem + 4.25vw, 6.25rem); /* Equivalent to 32px to 100px assuming 16px base */
+  margin-inline: auto;
+}
+.cardlist-content.cardlist-content--extra-padding-top {
+  padding-block-start: 7rem; /* Equivalent to 112px assuming 16px base */
+}
+.cardlist-content__heading {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: calc((min(100vw - var(--scrollbar-width, 0), 1392px) - clamp(2rem, 2rem + 4.25vw, 6.25rem) * 2 - clamp(1.5rem, 1.5rem + 2vw, 3.5rem) * (var(--grid-columns) - 1)) / var(--grid-columns) * 2 + clamp(1.5rem, 1.5rem + 2vw, 3.5rem) * 1); /* Equivalent to 24px to 56px assuming 16px base */
+}
+@media screen and (min-width: 52em) {
+  .cardlist-content__heading {
+    grid-column: 1/8;
+    gap: 2.3125rem; /* Equivalent to 37px assuming 16px base */
+    padding-inline-end: 0;
+  }
+}
+.cardlist-content__heading__pretitle {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9375rem, 0.9375rem + 0.0625vw, 1rem); /* Equivalent to 15px to 16px assuming 16px base */
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.cardlist-content__heading__title h2 {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 2rem + 0.5vw, 2.5rem); /* Equivalent to 32px to 40px assuming 16px base */
+  line-height: 1.2;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+.cardlist-content__cta-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 52em) {
+  .cardlist-content__cta-wrapper {
+    grid-column-start: 8;
+    grid-column-end: -1;
+    align-items: start;
+    justify-content: end;
+  }
+  .cardlist-content__cta-wrapper.pretitle {
+    align-items: end;
+  }
+}
+.cardlist-cta {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Equivalent to 8px assuming 16px base */
+  width: fit-content;
+  padding-inline: clamp(0.9375rem, 0.9375rem + 0.3125vw, 1.25rem); /* Equivalent to 15px to 20px assuming 16px base */
+  block-size: clamp(2.5rem, 2.5rem + 0.5vw, 3rem); /* Equivalent to 40px to 48px assuming 16px base */
+  transition-property: background-color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border-radius: 6.25rem; /* Equivalent to 100px assuming 16px base */
+  flex-shrink: 0;
+}
+.cardlist-cta__icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardlist-cta__icon::before {
+  font-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+}
+.cardlist-cta__label {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9375rem, 0.9375rem + 0.0625vw, 1rem); /* Equivalent to 15px to 16px assuming 16px base */
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.cardlist-cta[data-palette=palette-1] {
+  outline: 0 solid #04331a;
+  background-color: #04331a;
+  border: 2px solid #04331a;
+}
+.cardlist-cta[data-palette=palette-1] .cardlist-cta__icon,
+.cardlist-cta[data-palette=palette-1] .cardlist-cta__label {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .cardlist-cta[data-palette=palette-1]:hover,
+  .cardlist-cta[data-palette=palette-1]:focus-visible {
+    background-color: transparent;
+  }
+  .cardlist-cta[data-palette=palette-1]:hover .cardlist-cta__icon,
+  .cardlist-cta[data-palette=palette-1]:hover .cardlist-cta__label,
+  .cardlist-cta[data-palette=palette-1]:focus-visible .cardlist-cta__icon,
+  .cardlist-cta[data-palette=palette-1]:focus-visible .cardlist-cta__label {
+    color: #04331a;
+  }
+  .cardlist-cta[data-palette=palette-1]:hover .cardlist-cta__icon,
+  .cardlist-cta[data-palette=palette-1]:focus-visible .cardlist-cta__icon {
+    transform: translateX(0.2em);
+  }
+  .cardlist-cta[data-palette=palette-1]:focus-visible {
+    outline-width: 2px;
+    outline-offset: 2px;
+  }
+}
+.cardlist-content__card-item {
+  grid-column: 1/-1;
+  color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 1.2706rem + 0.4896vw, 2rem); /* Equivalent to 24px to 32px assuming 16px base */
+}
+@media screen and (min-width: 52em) {
+  .cardlist-content__card-item {
+    grid-column: auto/span 6;
+  }
+}
+@media screen and (min-width: 64em) {
+  .cardlist-content__card-item {
+    grid-column: auto/span 4;
+  }
+}
+.cardlist-content__card-item__image {
+  block-size: auto;
+  inline-size: 100%;
+  position: relative;
+  aspect-ratio: 5/4;
+  box-shadow: 0 3rem 3.75rem -2.25rem rgba(66, 15, 41, 0.2); /* Equivalent to 0 48px 60px -36px assuming 16px base */
+  object-fit: cover;
+}
+.cardlist-content__card-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Equivalent to 24px assuming 16px base */
+}
+.cardlist-content__card-item-content__title {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.25rem + 0.25vw, 1.5rem); /* Equivalent to 20px to 24px assuming 16px base */
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.cardlist-content__card-item-content__description p {
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+}

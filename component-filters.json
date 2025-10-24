@@ -13,21 +13,23 @@
       "button",
       "title",
       "hero",
-      "kards",
+      "cards",
       "columns",
       "fragment",
-      "honda",
-      "herohomepage",
-      "textandmedia",
-      "footer",
-      "frequentlyaskedquestions",
-      "video-player",
-      "interactive-list",
-      "header",
-      "header-navigation",
-      "hero-full-width",
+      "text-and-media",
       "scarpseparator",
-      "text-and-media"
+      "hero-full-width",
+      "header-navigation",
+      "media-component",
+      "faq",
+      "footer",
+      "card-list"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
     ]
   },
   {

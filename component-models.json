@@ -142,6 +142,99 @@
     ]
   },
   {
+    "id": "card-list",
+    "description": "Block model for Card List rendering",
+    "fields": [
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "Main heading for the card list.",
+        "group": "Header",
+        "label": "Heading",
+        "name": "heading",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Link for CTA button.",
+        "label": "CTA Link",
+        "name": "cta_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Text for CTA button.",
+        "label": "CTA Text",
+        "name": "cta_text",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "container",
+        "description": "List of cards displayed in the card list.",
+        "fields": [
+          {
+            "component": "aem-content",
+            "description": "Image URL for the card.",
+            "label": "Image Source",
+            "name": "image_src",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "description": "Alt text for the card image.",
+            "label": "Image Alt Text",
+            "name": "image_alt",
+            "required": false,
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "description": "Title of the card.",
+            "label": "Card Title",
+            "name": "title",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "description": "Description text for the card.",
+            "label": "Card Description",
+            "name": "description",
+            "required": false,
+            "valueType": "string"
+          }
+        ],
+        "label": "Cards",
+        "name": "cards",
+        "required": true,
+        "valueType": "array"
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
@@ -157,6 +250,55 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "faq",
+    "description": "Block model for FAQ Accordion rendering",
+    "fields": [
+      {
+        "collapsed": false,
+        "component": "richtext",
+        "description": "The heading for the FAQ section.",
+        "group": "Text",
+        "label": "FAQ Section Title",
+        "name": "title",
+        "placeholder": "Enter FAQ section title...",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "container",
+        "description": "List of FAQ questions and answers.",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Question",
+            "name": "question",
+            "required": true,
+            "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "label": "Answer",
+            "name": "answer",
+            "required": true,
+            "valueType": "string"
+          }
+        ],
+        "label": "FAQ Items",
+        "name": "faqItems",
+        "required": true,
+        "valueType": "array"
+      },
+      {
+        "component": "aem-content",
+        "description": "Image displayed in the FAQ section.",
+        "label": "Decorative Image",
+        "name": "image",
+        "required": false,
+        "valueType": "string"
       }
     ]
   },
@@ -285,60 +427,6 @@
     ]
   },
   {
-    "id": "footer",
-    "description": "Block model for Footer rendering",
-    "fields": [
-      {
-        "component": "image",
-        "description": "Logo image for the footer.",
-        "label": "Footer Logo",
-        "name": "logo",
-        "required": false,
-        "valueType": "object"
-      },
-      {
-        "component": "list",
-        "description": "List of social media links with icons.",
-        "label": "Social Links",
-        "name": "socialLinks",
-        "required": false,
-        "valueType": "object[]"
-      },
-      {
-        "component": "list",
-        "description": "Main navigation links in the footer.",
-        "label": "Navigation Links",
-        "name": "navigationLinks",
-        "required": false,
-        "valueType": "object[]"
-      },
-      {
-        "component": "list",
-        "description": "Policy links such as Privacy Notice, Terms of Use, etc.",
-        "label": "Policy Links",
-        "name": "policyLinks",
-        "required": false,
-        "valueType": "object[]"
-      },
-      {
-        "component": "text",
-        "description": "Copyright notice displayed in the footer.",
-        "label": "Copyright Text",
-        "name": "copyright",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "list",
-        "description": "Available languages for site selection.",
-        "label": "Language Selector",
-        "name": "languages",
-        "required": false,
-        "valueType": "object[]"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -435,129 +523,6 @@
     ]
   },
   {
-    "id": "header",
-    "description": "Block model for Header rendering",
-    "fields": [
-      {
-        "component": "text",
-        "description": "Label for skip to content button.",
-        "label": "Skip to Content Label",
-        "name": "skipToContent_label",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Theme for skip to content button.",
-        "label": "Skip to Content Theme",
-        "name": "skipToContent_theme",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "image",
-        "description": "Image source for the site logo.",
-        "label": "Logo Image Source",
-        "name": "logo_src",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "description": "URL for the site logo link.",
-        "label": "Logo Link",
-        "name": "logo_link",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "image",
-        "description": "Image source for the mobile menu icon.",
-        "label": "Mobile Menu Icon",
-        "name": "mobileMenu_icon",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "list",
-        "description": "Main navigation menu items.",
-        "fields": [
-          {
-            "component": "text",
-            "label": "Menu Item Label",
-            "name": "label",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "label": "Menu Item Link",
-            "name": "href",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "list",
-            "fields": [
-              {
-                "component": "text",
-                "label": "Submenu Item Label",
-                "name": "label",
-                "required": true,
-                "valueType": "string"
-              },
-              {
-                "component": "aem-content",
-                "label": "Submenu Item Link",
-                "name": "href",
-                "required": true,
-                "valueType": "string"
-              }
-            ],
-            "label": "Submenu Items",
-            "name": "submenu",
-            "required": false,
-            "valueType": "object[]"
-          }
-        ],
-        "label": "Main Navigation Menu",
-        "name": "menu",
-        "required": true,
-        "valueType": "object[]"
-      },
-      {
-        "component": "list",
-        "description": "Language selector links.",
-        "fields": [
-          {
-            "component": "text",
-            "label": "Language Label",
-            "name": "label",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "label": "Locale",
-            "name": "locale",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "label": "Language Link",
-            "name": "href",
-            "required": true,
-            "valueType": "string"
-          }
-        ],
-        "label": "Language Selector",
-        "name": "languages",
-        "valueType": "object[]"
-      }
-    ]
-  },
-  {
     "id": "hero-full-width",
     "description": "Block model for Hero Full Width rendering",
     "fields": [
@@ -636,171 +601,43 @@
     ]
   },
   {
-    "id": "herohomepage",
-    "description": "Block model for Hero Homepage rendering",
-    "fields": [
-      {
-        "component": "image",
-        "description": "Background image for the hero section.",
-        "label": "Background Image",
-        "name": "backgroundImage",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "video",
-        "description": "Main background video source.",
-        "label": "Background Video",
-        "name": "backgroundVideo",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "video",
-        "description": "Poster or secondary video source.",
-        "label": "Poster Video",
-        "name": "posterVideo",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "description": "Main large heading for hero.",
-        "label": "Hero Title",
-        "name": "title",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "description": "Short description under the title.",
-        "label": "Hero Description",
-        "name": "description",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "description": "URL for the main CTA button.",
-        "label": "Primary CTA Link",
-        "name": "primaryCtaLink",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Text for the primary CTA.",
-        "label": "Primary CTA Text",
-        "name": "primaryCtaText",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "description": "URL for the secondary CTA button.",
-        "label": "Secondary CTA Link",
-        "name": "secondaryCtaLink",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Text for the secondary CTA.",
-        "label": "Secondary CTA Text",
-        "name": "secondaryCtaText",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Text for the play video button.",
-        "label": "Play CTA Text",
-        "name": "playCtaText",
-        "required": false,
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "interactive-list",
-    "description": "Block model for Interactive List rendering",
+    "id": "media-component",
+    "description": "Block model for Media Component rendering",
     "fields": [
       {
         "collapsed": false,
         "component": "richtext",
-        "description": "Main headline of the block.",
+        "description": "Main title of the media component.",
         "group": "Text",
-        "label": "Headline",
-        "name": "headline",
-        "placeholder": "Type block headline...",
+        "label": "Media Title",
+        "name": "mediaTitle",
+        "placeholder": "Enter media title...",
         "required": true,
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "description": "Background image of the block.",
-        "label": "Background Image",
-        "name": "backgroundImage",
-        "required": false,
+        "description": "Video source for the poster video.",
+        "label": "Poster Video Source",
+        "name": "posterVideoSrc",
+        "required": true,
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "description": "Link for CTA button.",
-        "label": "CTA Link",
-        "name": "ctaLink",
-        "required": false,
+        "description": "Video source for the main video.",
+        "label": "Main Video Source",
+        "name": "mainVideoSrc",
+        "required": true,
         "valueType": "string"
       },
       {
         "component": "text",
-        "description": "Text for CTA button.",
-        "label": "CTA Text",
-        "name": "ctaText",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "group",
-        "description": "List of cards in the block.",
-        "fields": [
-          {
-            "component": "aem-content",
-            "description": "Image URL for the card.",
-            "label": "Card Image",
-            "name": "image",
-            "required": false,
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "description": "Alt text for card image.",
-            "label": "Image Alt Text",
-            "name": "imageAlt",
-            "required": false,
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "description": "Title of the card.",
-            "label": "Card Title",
-            "name": "title",
-            "required": true,
-            "valueType": "string"
-          },
-          {
-            "component": "richtext",
-            "description": "Description text for the card.",
-            "label": "Card Description",
-            "name": "description",
-            "required": false,
-            "valueType": "string"
-          }
-        ],
-        "label": "Cards",
-        "name": "items",
+        "description": "Text for the play button.",
+        "label": "Play Button Text",
+        "name": "playButtonText",
         "required": true,
-        "valueType": "object[]"
+        "valueType": "string"
       }
     ]
   },
@@ -873,96 +710,6 @@
       {
         "component": "text",
         "description": "Label for the CTA button.",
-        "label": "CTA Text",
-        "name": "cta_text",
-        "required": false,
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "textandmedia",
-    "description": "Block model for Text and Media rendering",
-    "fields": [
-      {
-        "component": "image",
-        "description": "The main image displayed.",
-        "label": "Image Source",
-        "name": "media_imageSrc",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Alternative text for the image.",
-        "label": "Image Alt Text",
-        "name": "media_imageAlt",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "collapsed": false,
-        "component": "richtext",
-        "description": "Section title.",
-        "group": "Text",
-        "label": "Title",
-        "name": "title",
-        "placeholder": "Enter a title",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "collapsed": false,
-        "component": "richtext",
-        "description": "Main body text.",
-        "group": "Text",
-        "label": "Body",
-        "name": "body",
-        "placeholder": "Enter the body content",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "description": "Link for CTA button.",
-        "label": "CTA Link",
-        "name": "cta_link",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "description": "Text for CTA button.",
-        "label": "CTA Text",
-        "name": "cta_text",
-        "required": false,
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "video-player",
-    "description": "Block model for Video Player component",
-    "fields": [
-      {
-        "component": "aem-content",
-        "description": "Source URL for the main video.",
-        "label": "Video Source",
-        "name": "video_src",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "description": "Source URL for the poster/preview video.",
-        "label": "Poster Video Source",
-        "name": "poster_video_src",
-        "required": false,
-        "valueType": "string"
-      },
-      {
-        "component": "textfield",
-        "description": "Label for the play call to action button.",
         "label": "CTA Text",
         "name": "cta_text",
         "required": false,

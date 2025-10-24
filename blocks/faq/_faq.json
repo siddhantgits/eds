@@ -1,0 +1,97 @@
+{
+  "definitions": [
+    {
+      "title": "FAQ Accordion",
+      "id": "faq",
+      "icon": "faq-icon",
+      "category": "content",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "faqItems": [
+                {
+                  "answer": "\u003cp\u003eA PIF company that plays a unique and exciting role in achieving the ambitions of Saudi Vision 2030, which strive to create a vibrant society, a thriving economy, and an ambitious nation.\u003c/p\u003e",
+                  "question": "What is Qiddiya Investment Company?"
+                },
+                {
+                  "answer": "\u003cp\u003eQiddiya Investment Company is the umbrella corporation which includes other companies; Qiddiya City \u0026amp; \u003ca href=\"https://seven.sa/\" target=\"_blank\" tabindex=\"-1\"\u003eSaudi Entertainment Ventures (SEVEN)\u003c/a\u003e.\u003c/p\u003e",
+                  "question": "What’s the difference between Qiddiya Investment Company and Qiddiya City?"
+                },
+                {
+                  "answer": "\u003cp\u003ePlay knows no particular age group. By that logic, neither do any of Qiddiya Investment Company’s projects.\u003c/p\u003e",
+                  "question": "What age groups do Qiddiya Investment Company projects target?"
+                },
+                {
+                  "answer": "\u003cp\u003eBy visiting our\u0026nbsp;\u003ca href=\"/contact/\" target=\"_self\" tabindex=\"-1\"\u003eInvestment Page\u003c/a\u003e.\u003c/p\u003e",
+                  "question": "How do investors get more information about Qiddiya Investment Company?"
+                },
+                {
+                  "answer": "\u003cp\u003eBy visiting our\u0026nbsp;\u003ca href=\"/contact/vendors/\" target=\"_self\" tabindex=\"-1\"\u003eVendors Page\u003c/a\u003e.\u003c/p\u003e",
+                  "question": "How do vendors provide their services to Qiddiya Investment Company?"
+                }
+              ],
+              "image": "/content/dam/aemigrate/uploaded-folder/image/palette-aqua-scarp.png",
+              "model": "faqAccordion",
+              "name": "faqAccordion",
+              "title": "\u003ch2\u003eFrequently asked questions\u003c/h2\u003e"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "faq",
+      "description": "Block model for FAQ Accordion rendering",
+      "fields": [
+        {
+          "collapsed": false,
+          "component": "richtext",
+          "description": "The heading for the FAQ section.",
+          "group": "Text",
+          "label": "FAQ Section Title",
+          "name": "title",
+          "placeholder": "Enter FAQ section title...",
+          "required": true,
+          "valueType": "string"
+        },
+        {
+          "component": "container",
+          "description": "List of FAQ questions and answers.",
+          "fields": [
+            {
+              "component": "text",
+              "label": "Question",
+              "name": "question",
+              "required": true,
+              "valueType": "string"
+            },
+            {
+              "component": "richtext",
+              "label": "Answer",
+              "name": "answer",
+              "required": true,
+              "valueType": "string"
+            }
+          ],
+          "label": "FAQ Items",
+          "name": "faqItems",
+          "required": true,
+          "valueType": "array"
+        },
+        {
+          "component": "aem-content",
+          "description": "Image displayed in the FAQ section.",
+          "label": "Decorative Image",
+          "name": "image",
+          "required": false,
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

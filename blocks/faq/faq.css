@@ -1,0 +1,281 @@
+.faq-faq {
+  background: linear-gradient(180deg, #f2ecff 0%, #fff 100%);
+  color: #230f62;
+  overflow: hidden;
+  position: relative;
+  margin-block-start: 5rem; /* Equivalent to 80px assuming 16px base */
+}
+@media screen and (min-width: 80rem /* Equivalent to 1280px assuming 16px base */) {
+  .faq-faq {
+    padding-block-end: 5rem; /* Equivalent to 80px assuming 16px base */
+  }
+}
+.faq-wrapper {
+  display: grid;
+  grid-template: auto/repeat(var(--faq-available-columns, var(--faq-grid-columns, 12)), 1fr);
+  column-gap: clamp(1.5rem, 0.582rem + 3.91677vw, 3.5rem); /* Equivalent to clamp(24px, 9.31212px + 3.91677vw, 56px) assuming 16px base */
+  row-gap: 2rem; /* Equivalent to 32px assuming 16px base */
+  inline-size: min(100%, 87rem /* Equivalent to 1392px assuming 16px base */);
+  margin-inline: auto;
+  padding-block: 5rem; /* Equivalent to 80px assuming 16px base */
+  padding-inline: 6.25rem; /* Equivalent to 100px assuming 16px base */
+  min-height: 37.5rem; /* Equivalent to 600px assuming 16px base */
+}
+.faq-scarp {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  opacity: 0;
+  display: none;
+  inline-size: 6.6875rem; /* Equivalent to 107px assuming 16px base */
+  aspect-ratio: 107/170;
+  transform: translateY(-55%);
+}
+@keyframes faq-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 64rem /* Equivalent to 1024px assuming 16px base */) {
+  .faq-scarp {
+    opacity: 1;
+    animation: faq-fadeIn 0.8s linear;
+    display: initial;
+  }
+}
+@media screen and (min-width: 90rem /* Equivalent to 1440px assuming 16px base */) {
+  .faq-scarp {
+    inline-size: 9.375rem; /* Equivalent to 150px assuming 16px base */
+    aspect-ratio: 150/238;
+  }
+}
+@media screen and (min-width: 120rem /* Equivalent to 1920px assuming 16px base */) {
+  .faq-scarp {
+    inline-size: 12.5rem; /* Equivalent to 200px assuming 16px base */
+    aspect-ratio: 200/318;
+  }
+}
+.faq-text-wrapper {
+  inline-size: 100%;
+  margin-block-end: auto;
+  flex-shrink: 0;
+  z-index: 1;
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 64rem /* Equivalent to 1024px assuming 16px base */) {
+  .faq-text-wrapper {
+    grid-column: 1/5;
+  }
+}
+.faq-title {
+  font-weight: 400;
+}
+.faq-title * {
+  font-size: 2.5rem; /* Equivalent to 40px assuming 16px base */
+  font-weight: inherit;
+  line-height: 1.2;
+}
+.faq-description {
+  margin-block-start: 1rem; /* Equivalent to 16px assuming 16px base */
+}
+.faq-description p {
+  font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+}
+.faq-accordions {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  grid-column: 1/-1;
+}
+@media screen and (min-width: 64rem /* Equivalent to 1024px assuming 16px base */) {
+  .faq-accordions {
+    grid-column: 6/-1;
+  }
+}
+.faq-accordion-item {
+  border-block-end: 0.0625rem solid #eee; /* Equivalent to 1px assuming 16px base */
+}
+.faq-accordion-item:first-of-type button {
+  padding-block-start: 0.5rem; /* Equivalent to 8px assuming 16px base */
+}
+.faq-accordion-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #230f62;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem; /* Equivalent to 16px assuming 16px base */
+  padding-block: 2rem; /* Equivalent to 32px assuming 16px base */
+  padding-inline: 0 0.5rem; /* Equivalent to 0 8px assuming 16px base */
+}
+.faq-accordion-item button .faq-accordion-icon {
+  margin-inline-start: auto;
+  transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
+  inline-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  block-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  font-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.faq-accordion-item button .faq-accordion-icon::after {
+  content: "";
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  width: 2.5rem; /* Equivalent to 40px assuming 16px base */
+  height: 2.5rem; /* Equivalent to 40px assuming 16px base */
+  border-radius: 50%;
+  position: absolute;
+}
+.faq-accordion-item button .faq-accordion-icon::before {
+  z-index: 1;
+}
+.faq-accordion-item button[aria-expanded=true] .faq-accordion-icon {
+  transform: rotate(180deg);
+}
+.faq-accordion-item button[aria-expanded=true] .faq-accordion-icon::after {
+  content: "";
+  opacity: 0.4;
+  background-color: #e9dfff;
+  border-radius: 50%;
+  position: absolute;
+}
+.faq-accordion-item .faq-accordion-panel {
+  overflow: hidden;
+  text-align: start;
+}
+.faq-accordion-item .faq-accordion-panel--hidden {
+  display: block;
+}
+.faq-accordion-item .faq-accordion-panel p {
+  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+}
+.faq-accordion-item .faq-accordion-title {
+  flex-grow: 1;
+  text-align: start;
+  font-family: "proxima-nova-wide", "bukra-wide", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.faq-accordion-item .faq-accordion-item-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s, padding-block-end 0.5s;
+  color: #2a2a2a;
+  line-height: 1.6;
+}
+.faq-accordion-item .faq-accordion-item-wrapper a {
+  color: #054021;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.faq-accordion-item .faq-accordion-item-wrapper a:hover::after {
+  transform: scaleX(105%);
+}
+.faq-accordion-item .faq-accordion-item-wrapper a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  block-size: 0.125rem; /* Equivalent to 2px assuming 16px base */
+  inline-size: 100%;
+  transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  background-color: currentColor;
+  inset-block-end: 0;
+}
+.faq-accordion-item[data-cmp-expanded] .faq-accordion-item-wrapper {
+  grid-template-rows: 1fr;
+  padding-block-end: 2rem; /* Equivalent to 32px assuming 16px base */
+}
+html[dir=rtl] .faq-scarp {
+  transform: translateY(-55%) rotate(0deg) scaleX(-1);
+}
+.faq-text {
+  color: #3f3f3f;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.faq-text p {
+  font-size: 1.125rem; /* Equivalent to 18px assuming 16px base */
+  line-height: 1.4;
+}
+.faq-text h2 {
+  font-weight: 400;
+  font-size: 2.5rem; /* Equivalent to 40px assuming 16px base */
+  line-height: 1.2;
+}
+.faq-text h3 {
+  font-weight: 400;
+  font-size: 2rem; /* Equivalent to 32px assuming 16px base */
+  line-height: 1.2;
+}
+.faq-text h4 {
+  font-weight: 400;
+  font-size: 1.5rem; /* Equivalent to 24px assuming 16px base */
+  line-height: 1.4;
+}
+.faq-text .faq-green-text {
+  color: #054021;
+}
+.faq-text .faq-neutrals-jet-black {
+  color: #2a2a2a;
+}
+.faq-text .faq-semi-bold {
+  font-weight: 600;
+}
+.faq-text table tbody tr td {
+  font-weight: 400;
+  font-size: 1rem; /* Equivalent to 16px assuming 16px base */
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  padding: 1rem 0.5rem; /* Equivalent to 16px 8px assuming 16px base */
+  border-block-end: 0.0625rem solid #eee; /* Equivalent to 1px assuming 16px base */
+}
+.faq-text ul {
+  margin-block-end: 1rem; /* Equivalent to 16px assuming 16px base */
+  padding-inline-start: 2rem; /* Equivalent to 32px assuming 16px base */
+  list-style: circle;
+}
+.faq-text a,
+.faq-text u {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+@media (hover: hover) {
+  .faq-text a:hover::after,
+  .faq-text u:hover::after {
+    transform: scaleX(105%);
+  }
+  .faq-text a::after,
+  .faq-text u::after {
+    content: "";
+    display: block;
+    position: absolute;
+    block-size: 0.125rem; /* Equivalent to 2px assuming 16px base */
+    inline-size: 100%;
+    transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    background-color: currentColor;
+    inset-block-end: 0;
+  }
+}
+@media (pointer: coarse) {
+  .faq-text a,
+  .faq-text u {
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem; /* Equivalent to 2px assuming 16px base */
+    text-underline-offset: 0.125rem; /* Equivalent to 2px assuming 16px base */
+  }
+}
