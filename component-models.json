@@ -601,6 +601,102 @@
     ]
   },
   {
+    "id": "herohomepage",
+    "description": "Block model for Hero Homepage rendering",
+    "fields": [
+      {
+        "component": "richtext",
+        "description": "Main title for the homepage hero.",
+        "label": "Title",
+        "name": "title",
+        "placeholder": "Enter title...",
+        "required": true,
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "description": "Description text under the title.",
+        "label": "Description",
+        "name": "description",
+        "placeholder": "Enter description...",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Hero background image URL.",
+        "label": "Background Image",
+        "name": "backgroundImage",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Media query for the background image source.",
+        "label": "Background Image Source Media Query",
+        "name": "backgroundImageSource",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Main video file URL.",
+        "label": "Video Source",
+        "name": "videoSrc",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Poster video file URL.",
+        "label": "Poster Video Source",
+        "name": "posterSrc",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Label for play video button.",
+        "label": "Play CTA Label",
+        "name": "playCtaLabel",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "First call-to-action link.",
+        "label": "CTA 1 Link",
+        "name": "cta_1_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "First call-to-action label.",
+        "label": "CTA 1 Label",
+        "name": "cta_1_label",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "description": "Second call-to-action link.",
+        "label": "CTA 2 Link",
+        "name": "cta_2_link",
+        "required": false,
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "description": "Second call-to-action label.",
+        "label": "CTA 2 Label",
+        "name": "cta_2_label",
+        "required": false,
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "media-component",
     "description": "Block model for Media Component rendering",
     "fields": [
