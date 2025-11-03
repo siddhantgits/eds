@@ -50,8 +50,18 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
-      ,"text-and-media","scarpseparator","hero-full-width","header-navigation","media-component","faq","footer","card-list","spaceadder"]
+        "fragment",
+        "text-and-media",
+        "scarpseparator",
+        "hero-full-width",
+        "header-navigation",
+        "media-component",
+        "faq",
+        "footer",
+        "card-list",
+        "spaceadder",
+        "header"
+      ]
     }
   ]
 }

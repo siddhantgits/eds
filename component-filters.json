@@ -24,7 +24,8 @@
       "faq",
       "footer",
       "card-list",
-      "spaceadder"
+      "spaceadder",
+      "header"
     ]
   },
   {
@@ -75,7 +76,7 @@
   {
     "id": "header",
     "components": [
-      "headerMenuItem",
+      "menuItem",
       "footerLink",
       "socialLink"
     ]
