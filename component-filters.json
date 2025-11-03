@@ -23,13 +23,20 @@
       "media-component",
       "faq",
       "footer",
-      "card-list"
+      "card-list",
+      "spaceadder"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel-items",
+    "components": [
+      "carousel-item"
     ]
   },
   {
@@ -45,6 +52,44 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "featurecards",
+    "components": [
+      "featurecard"
+    ]
+  },
+  {
+    "id": "footer_nav_links",
+    "components": [
+      "footer-nav-link"
+    ]
+  },
+  {
+    "id": "footer_social_links",
+    "components": [
+      "footer-social-link"
+    ]
+  },
+  {
+    "id": "header",
+    "components": [
+      "headerMenuItem",
+      "footerLink",
+      "socialLink"
+    ]
+  },
+  {
+    "id": "latestblogs_cards",
+    "components": [
+      "latestblogcard"
+    ]
+  },
+  {
+    "id": "sticky-navigation",
+    "components": [
+      "sticky-navigation-item"
     ]
   }
 ]
