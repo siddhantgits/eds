@@ -239,35 +239,27 @@
     "description": "",
     "fields": [
       {
-        "component": "reference",
-        "label": "Video Source",
-        "multi": false,
-        "name": "video",
+        "component": "richtext",
+        "label": "Title",
+        "name": "title",
         "valueType": "string"
       },
       {
         "component": "reference",
-        "label": "Image Source",
-        "multi": false,
+        "label": "Image",
         "name": "image",
         "valueType": "string"
       },
       {
-        "component": "text",
-        "label": "Image Alt Text",
-        "name": "imageAlt",
+        "component": "reference",
+        "label": "Video",
+        "name": "video",
         "valueType": "string"
       },
       {
         "component": "aem-content",
         "label": "CTA Link",
-        "name": "ctaLink",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "label": "CTA Text",
-        "name": "ctaText",
+        "name": "cta",
         "valueType": "string"
       }
     ]
